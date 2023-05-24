@@ -226,6 +226,7 @@ h3 {
 }
 
 .cajaNosotros2 {
+
     display: flex;
     
     padding: 6rem;
@@ -627,7 +628,7 @@ h3 {
         background-color: rgb(29, 28, 28);
         padding-top: 20px;
         padding-left: 50px;
-        margin-top: 650px;
+        
     
     }
 
