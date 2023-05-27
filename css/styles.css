@@ -186,7 +186,7 @@ h3 {
 /********* PROPS/CAJAS ********/
 
 .props {
-    width: 300px;
+    width: 360px;
     height: 320px;
     background-color: rgb(188, 201, 206);
     color: #000000;
@@ -263,16 +263,16 @@ h3 {
 /**** Titulos Cajas Home****/
 
 .tituloCajas {
-    padding: 20px 20px 0px 45px;
+    padding: 20px 20px 0px 80px;
 }
 
 .tituloCajas2 {
-    padding: 20px 8px 0px 70px;
+    padding: 20px 8px 0px 110px;
     
 }
 
 .tituloCajas3 {
-    padding: 20px 10px 0px 32px;
+    padding: 20px 10px 0px 70px;
 }
 
 /**** Titulos Cajas Servicios***/
@@ -691,7 +691,7 @@ h3 {
 
 }
 
-/*** Pagina Nosotros ***/
+   /*** Pagina Nosotros ***/
 .cajaNosotros2 {
     display: block;
     padding: 2rem;
@@ -728,10 +728,7 @@ h3 {
 }
 
 
-
-
-
-/**** Pagina Contacto ****/
+   /**** Pagina Contacto ****/
 
 .propFormulario{
     width: 470px;
@@ -788,13 +785,7 @@ h3 {
 }
 
 
-
-
-
-
-
-
-/*** Pagina Portfolio ***/
+  /*** Pagina Portfolio ***/
 .containerGrid{
     display: inline;
     width: 95%;
