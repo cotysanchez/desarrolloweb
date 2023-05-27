@@ -53,8 +53,9 @@
 
 .container-fluid-contacto {
     background-color: rgb(198, 198, 233);
+    height: 560px;
     padding-left: 40px;
-    padding-top: 140px;
+    padding-top: 15px;
 }
 
 /***************** Grid ********************/
@@ -206,12 +207,13 @@ h3 {
 }
 
 .propFormulario{
+    display: inline-block;
     width: 520px;
     height: 365px;
     background-color: rgb(29, 28, 28);
     color: #fff;
     margin-left: 45px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     margin-right: 50px;
 }
 
@@ -354,16 +356,24 @@ h3 {
       color: #fff  
 }
 
+.rowContacto {
+height: 365px;
+display: flex;
+padding-top: 90px;
+}
+
 .colContactanos {
-    width: 250px;
+    display: inline-block;
+    width: 520px;
+    height: 365px;
     background-color: rgb(233, 233, 233);
     padding-top: 50px;
     margin-left: 40px;
-    margin-bottom: 200px;  
+    margin-bottom: 40px;  
 }
 
 .parrafoContactanos {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 25px;
@@ -745,14 +755,15 @@ h3 {
 
 .propFormulario{
     
-    width: 600px;
+    width: 410px;
     height: 320px;
     background-color: rgb(29, 28, 28);
     color: #fff;
     margin-top: 19px;
-    margin-left: 40px;
-    margin-bottom: 12px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+
 }
 
 .contenidoCajaFormulario {
@@ -800,7 +811,9 @@ h3 {
     size: 15px;
 
 }
+
 .container-fluid-contacto {
+    height: 780px;
     display: flex;
     background-color: rgb(200, 200, 252);
     padding-left: 3px;
@@ -813,6 +826,12 @@ h3 {
     font-size: 25px;
 }
 
+.rowContacto {
+    height: 365px;
+    display: inline;
+    padding-top: 5px;
+    }
+
 .parrafoContactanos {
     padding-top: 10px;
     padding-left: 30px;
@@ -823,11 +842,13 @@ h3 {
 }
 
 .colContactanos {
-    width: 250px;
+    display: block;
+    width: 420px;
+    height: 365px;
     background-color: rgb(233, 233, 233);
     padding-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
 }
 
 .iconosRedesSociales{
