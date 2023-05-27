@@ -1,5 +1,5 @@
 
-
+/********* Reset ********/
 * {  /* ----- */
     margin:0;
     padding:0;
@@ -40,7 +40,7 @@
 }
 
 
-/**** Para sacar bordes en las imagenes del Carrousel bs-gutter ***/
+/********  Container Fluid *******/
 .container-fluid {
     --bs-gutter-x: 0;
 }
@@ -61,10 +61,7 @@
 
 #grilla {
     width: 100%;
-    
-    
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  450px 450px 320px;
 
@@ -88,18 +85,12 @@
     grid-area: content2;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(29, 28, 28);
-  
 }
 
 #content3 {
     display: grid;
-    grid-area: content3;
-    
+    grid-area: content3; 
 }
-
-
-
-
 
 
 /***** Etiquetas *****/
@@ -200,9 +191,6 @@ h3 {
     margin-top: 60px;
     margin-left: 80px;
     display: inline-block;
-  
-    
-    
 }
 
 .props2 {
@@ -225,7 +213,6 @@ h3 {
     margin-left: 45px;
     margin-bottom: 120px;
     margin-right: 50px;
-
 }
 
 .cajaNosotros {
@@ -236,13 +223,11 @@ h3 {
 }
 
 .cajaNosotros2 {
-
     display: flex;
     padding: 6rem;
     margin-bottom: 10px;
     justify-content: space-between;
     background-color: rgb(29, 28, 28);
-   
 }
 
 
@@ -269,28 +254,25 @@ h3 {
     color: #fff;
 }
 
-/**** Titulos Cajas Home****/
+/******** Titulos Cajas Home ********/
 
 .tituloCajas {
     padding: 20px 20px 0px 80px;
 }
 
 .tituloCajas2 {
-    padding: 20px 8px 0px 110px;
-    
+    padding: 20px 8px 0px 110px; 
 }
 
 .tituloCajas3 {
     padding: 20px 10px 0px 70px;
 }
 
-/**** Titulos Cajas Servicios***/
+/******** Cajas Servicios *******/
 
 .w-100{
     width: 100vw;
 }
-
-
 
 .tituloCajaA {
     padding: 25px 15px 0px 20px;
@@ -329,8 +311,7 @@ h3 {
     font-size: 18px;
     vertical-align: middle;
     text-align: center;
-    color:#fff
-  
+    color:#fff 
 }
 
 .contenidoCajaFormulario {
@@ -378,10 +359,7 @@ h3 {
     background-color: rgb(233, 233, 233);
     padding-top: 50px;
     margin-left: 40px;
-    margin-bottom: 200px;
-    
-
-    
+    margin-bottom: 200px;  
 }
 
 .parrafoContactanos {
@@ -389,9 +367,6 @@ h3 {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 25px;
-   
-
-
 }
 
 .iconosRedesSociales{
@@ -404,19 +379,13 @@ h3 {
     justify-content:center;
     color: #fff;
     position:relative;
-
 }
 
 .iconosRedesSocialesHover:hover {
     text-decoration: none;
     color: rgb(2, 2, 2);
-    background-color: rgb(255, 251, 251);
-    
+    background-color: rgb(255, 251, 251);   
 }
-
-
-
-
 
 
 /******** Imagenes ********/
@@ -432,7 +401,6 @@ h3 {
     width: 432px;
     height: 386px;
     display: inline-block;
-     
 }
 
 .centrado {
@@ -442,7 +410,7 @@ h3 {
     display: flex;
 }
 
-/*** Contenedor Portfolio ***/
+/******* Contenedor Portfolio *******/
 
 .containerGrid{
     display: grid;
@@ -460,7 +428,6 @@ h3 {
     padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 20px;
-    
 }
 
 
@@ -475,7 +442,7 @@ h3 {
 }
 
 
-/*********** Bordes************/
+/*********** Bordes ************/
 
 .bordeComun {
     width: 540px;
@@ -486,8 +453,7 @@ h3 {
     padding-left: 40px;
     border-color:  rgb(29, 28, 28);
     border-style: hidden;
-    position: absolute;
-    
+    position: absolute;  
 }
 
 
@@ -499,13 +465,10 @@ h3 {
     border-style: groove;
     display: flex;
     align-items: center;
-
 }
 
 
 /*********** Footer **********/
-
-
 
 .footerCopyright {
     font-family: "Lato-Regular";
@@ -515,7 +478,7 @@ h3 {
 }
 
 
-/**** Vista Mobile - Media Queries ****/ 
+/******** Vista Mobile - Media Queries ********/ 
 
 @media (max-width: 480px) {
     header {
@@ -596,7 +559,6 @@ h3 {
     
     #content3 {
         height: 300px;
-
         grid-area: content3;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -621,8 +583,7 @@ h3 {
     
     .tituloCajas2 {
         padding: 25px 8px 0px 130px;
-        font-size: 23px;
-        
+        font-size: 23px;  
     }
     
     .tituloCajas3 {
@@ -632,8 +593,7 @@ h3 {
     
     .contenidoCajas {
         padding: 25px 32px 20px 40px;
-        font-size: 14px;
-        
+        font-size: 14px;  
     }
 
     .tituloSoluciones {
@@ -645,8 +605,7 @@ h3 {
 
     .contenidoCajaLista{
         padding: 5px 15px 25px 10px;
-        font-size: 14px;
-        
+        font-size: 14px; 
     }
 
      
@@ -676,7 +635,6 @@ h3 {
         width: 100%;
         height: 300px;
         background-color: rgb(188, 201, 206);
-        
         display: inline-block;
     }
 
@@ -691,9 +649,6 @@ h3 {
         background-color: rgb(29, 28, 28);
         padding-top: 20px;
         padding-left: 50px;
-        
-        
-    
     }
 
     .footerCopyright {
@@ -704,7 +659,8 @@ h3 {
     }
 
 
-    /*** Pagina servicios ***/
+    /******* Pagina Servicios *******/
+
     .container-fluid2 {
         height: 1200px;
         background-color: rgb(7, 7, 7);
@@ -748,7 +704,8 @@ h3 {
 
 }
 
-   /*** Pagina Nosotros ***/
+   /******* Pagina Nosotros *******/
+
 .cajaNosotros2 {
     display: block;
     padding: 2rem;
@@ -780,12 +737,11 @@ h3 {
 .imagenDerecha {
     width: 432px;
     height: 386px;
-    display: block;
-     
+    display: block;  
 }
 
 
-   /**** Pagina Contacto ****/
+   /******** Pagina Contacto ********/
 
 .propFormulario{
     
@@ -892,16 +848,11 @@ h3 {
     text-decoration: none;
     color: rgb(2, 2, 2);
     background-color: rgb(255, 251, 251);
-  
 }
 
 
+  /******* Pagina Portfolio *******/
 
-
-
-
-
-  /*** Pagina Portfolio ***/
 .containerGrid{
     display: inline;
     width: 95%;
