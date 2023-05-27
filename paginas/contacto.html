@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../assets/imagenes/csd.ico">
     <title>Contacto</title>
@@ -29,33 +30,51 @@
 <main class="contacto">
 
   <h2 class="titulo">Contacto</h2>   
-<!-- flexbox - Box Modeling -->
-  <form>
-      <div class="propFormulario">
-       <div class="contenidoCajaFormulario"</div>
-     
-       <div>
-          <label class="label" for="Nombre">Nombre:</label>
-          <input class="input-text" type="text" placeholder="Introduzca Nombre">
-       </div>
-       <div>
-          <label class="label" for="Apellido">Apellido:</label>
-          <input class="input-text" type="text" placeholder="Introduzaca Apellido">
-       </div>
-       <div>
-          <label class="label" for="Email">Email:</label>
-          <input class="input-text" type="email" placeholder="Intruduzca Email">
-       </div>
-       <div class="campo">
-           <label class="label" for="Comentario">Comentario:</label>
-           <textarea class="text-area" aria-valuetext="Comentario" placeholder="Escribe tu comentario Aqui"></textarea>
-       </div>
-       <div>
-        <input class="btn btn-primary" type="submit" value="Enviar">  
-       </div>
-      </div> 
-  </form>
+<!--  grid bootstrap - flexbox - Box Modeling -->
 
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <H3>Ponete en Contacto con Nostros</H3>
+      <p> Si necesitas ayuda para definir que tipo de servicio necesitas podes enviarnos un correo 
+        electronico o contactarnos por cualquiera de estos medios
+      </p>
+      <a class="social-icon-instagram" href="" target="_blank"></a>
+
+    </div>
+
+    
+    <div class="col propFormulario">
+      <div class="contenidoCajaFormulario"</div>
+     
+        <div>
+           <label class="label" for="Nombre">Nombre:</label>
+           <input class="input-text" type="text" placeholder="Introduzca Nombre">
+        </div>
+        <div>
+           <label class="label" for="Apellido">Apellido:</label>
+           <input class="input-text" type="text" placeholder="Introduzaca Apellido">
+        </div>
+        <div>
+           <label class="label" for="Email">Email:</label>
+           <input class="input-text" type="email" placeholder="Intruduzca Email">
+        </div>
+        <div class="campo">
+            <label class="label" for="Comentario">Comentario:</label>
+            <textarea class="text-area" aria-valuetext="Comentario" placeholder="Escribe tu comentario Aqui"></textarea>
+        </div>
+        <div>
+         <input class="btn btn-primary" type="submit" value="Enviar">  
+        </div>
+       </div> 
+      
+
+    </div>
+  </div>
+
+
+
+  
   
 </main>
 
