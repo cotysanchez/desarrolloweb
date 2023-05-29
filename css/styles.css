@@ -125,7 +125,6 @@ header nav ul li {
     float: left;
 }
 
-
 a {
     text-decoration: none;
     color: rgb(188, 201, 206)
@@ -669,6 +668,42 @@ padding-top: 90px;
     }
 
 
+  /******* Pagina Nosotros *******/
+
+  .cajaNosotros2 {
+    display: block;
+    padding: 2rem;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    background-color:  rgb(29, 28, 28);
+   
+}
+
+.bordeComun2 {
+    width: 432px;
+    height: 320px;
+    padding: 10px;
+    border-color: #fff;
+    border-style: groove;
+    display: block;
+    align-items: center;
+
+}
+.contenidoCajaNosotros2 {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff
+    font-size: 16px;
+  
+}
+
+.imagenDerecha {
+    width: 432px;
+    height: 386px;
+    display: block;  
+}
+
     /******* Pagina Servicios *******/
 
     .container-fluid2 {
@@ -714,46 +749,30 @@ padding-top: 90px;
 
 }
 
-   /******* Pagina Nosotros *******/
+  /******* Pagina Portfolio *******/
 
-.cajaNosotros2 {
-    display: block;
-    padding: 2rem;
-    margin-bottom: 5px;
-    justify-content: space-between;
-    background-color:  rgb(29, 28, 28);
-   
+.containerGrid{
+    display: inline;
+    width: 95%;
+    height: 900px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    
+    background-color: rgb(7, 7, 7);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.divPortfolio {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    
 }
 
-.bordeComun2 {
-    width: 432px;
-    height: 320px;
-    padding: 10px;
-    border-color: #fff;
-    border-style: groove;
-    display: block;
-    align-items: center;
+  /******** Pagina Contacto ********/
 
-}
-.contenidoCajaNosotros2 {
-    padding: 15px;
-    vertical-align: middle;
-    text-align: center;
-    color:#fff
-    font-size: 16px;
-  
-}
-
-.imagenDerecha {
-    width: 432px;
-    height: 386px;
-    display: block;  
-}
-
-
-   /******** Pagina Contacto ********/
-
-.propFormulario{
+  .propFormulario{
     
     width: 410px;
     height: 320px;
@@ -871,27 +890,6 @@ h3 {
     background-color: rgb(255, 251, 251);
 }
 
-
-  /******* Pagina Portfolio *******/
-
-.containerGrid{
-    display: inline;
-    width: 95%;
-    height: 900px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    
-    background-color: rgb(7, 7, 7);
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-}
-.divPortfolio {
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-    
-}
 
 }
     
