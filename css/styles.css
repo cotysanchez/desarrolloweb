@@ -189,7 +189,7 @@ h3 {
     background-color: rgb(188, 201, 206);
     color: #000000;
     margin-top: 60px;
-    margin-left: 80px;
+    margin-left: 45px;
     display: inline-block;
 }
 
@@ -244,7 +244,7 @@ h3 {
     color: rgb(255, 255, 255);
     position:absolute;
     z-index: 5;
-    top: 290px;
+    top: 260px;
     left: 50px;
 }
 
@@ -423,9 +423,10 @@ padding-top: 90px;
 
 .containerGrid{
     display: grid;
-    width: 95%;
+    width: 98%;
     height: 900px;
-    margin-left: 40px;
+    
+    margin-left: 10px;
     margin-bottom: 40px;
     
     background-color: rgb(221, 221, 221);
@@ -433,11 +434,14 @@ padding-top: 90px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
 }
-.divPortfolio {
+.divPortfolio >img {
+    width: 420px;
     padding-top: 20px;
     padding-left: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
+
+
 
 
 
@@ -445,8 +449,8 @@ padding-top: 90px;
 
 .videoInicio {
     position: absolute;
-    top: 1190px;
-    left: 800px;
+    top: 1120px;
+    left: 740px;
     margin-top: 40px;
 }
 
@@ -753,19 +757,21 @@ padding-top: 90px;
 
 .containerGrid{
     display: inline;
-    width: 95%;
+    width: 90%;
     height: 900px;
     margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 10px;
     
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(199, 199, 199);
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
 }
-.divPortfolio {
+.divPortfolio >img {
+    width: 460px;
     padding-top: 20px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-bottom: 20px;
     
 }
