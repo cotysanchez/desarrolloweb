@@ -47,7 +47,7 @@
 
 .container-fluid2 {
     height: 450px;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(29, 28, 28);
  
 }
 
@@ -286,6 +286,40 @@ h3 {
 
 .tituloCajaC {
     padding: 25px 10px 0px 20px;
+}
+
+.conteinerServicios1{
+    
+    flex-direction: column;
+    height: 400px;
+    background-color: rgb(188, 201, 206);
+    margin-bottom: 20px;
+}
+
+.conteinerServicios2{
+    height: 400px;
+    background-color: rgb(29, 28, 28);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.containerTituloParrafo {
+    height: 355px;
+    padding-top: 120px;
+    
+}
+
+.containerImagen1 {
+    padding-top: 25px;
+    padding-left: 120px;
+
+}
+
+.containerImagen2 {
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 180px;
 }
 
 
@@ -742,7 +776,53 @@ padding-top: 90px;
         padding-top: -10px;
         font-size: 14px;
         size: 20px;
+
 }
+.conteinerServicios1{
+    height: 400px;
+    
+    background-color: rgb(188, 201, 206);
+    margin-bottom: 20px;
+}
+
+.conteinerServicios2{
+    height: 400px;
+    background-color: rgb(29, 28, 28);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.containerTituloParrafo {
+    height: 355px;
+    padding-top: 120px;
+    
+    
+}
+
+.containerImagen1 {
+    padding-top: 25px;
+    padding-left: 120px;
+
+}
+
+.containerImagen2 {
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /******* Pagina Portfolio *******/
 
