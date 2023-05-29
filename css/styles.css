@@ -495,9 +495,7 @@ padding-top: 90px;
 
 @media (max-width: 480px) {
     header {
-        display: block;
         flex-direction: row;
-        
         width: 100%;
         height: 40px;
         background-color: rgb(29, 28, 28);
@@ -506,18 +504,14 @@ padding-top: 90px;
     }
     
     header nav ul {
-        display: block;
-    
         width: 100%;
         height: 100%;
         margin: auto;
     }
     
     header nav ul li {
-        display: inline;
         align-items: center;
         justify-content: center;
-    
         width: auto;
         height: 100%;
         margin: 0 10px;
@@ -538,7 +532,7 @@ padding-top: 90px;
     }
 
     #grilla {
-        display: block;
+       
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
@@ -558,7 +552,7 @@ padding-top: 90px;
         grid-template-rows: 1fr 1fr 1fr;
         background-color: rgb(221, 221, 221);
         align-items: center;
-        display: block;
+        
     }
     
     #content2 {
@@ -567,7 +561,7 @@ padding-top: 90px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: rgb(29, 28, 28);
-        display: block; 
+        
     }
     
     #content3 {
@@ -576,7 +570,7 @@ padding-top: 90px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
-        display: block;
+        
     }
 
     .props {
