@@ -755,24 +755,23 @@ padding-top: 90px;
 
   /******* Pagina Portfolio *******/
 
-.containerGrid{
-    display: inline;
+.containerGrid {
     width: 90%;
-    height: 900px;
-    margin-left: 40px;
+    height: 2500px;
+    margin-left: 25px;
     margin-right: 40px;
     margin-bottom: 10px;
     
     background-color: rgb(199, 199, 199);
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 265px;
 }
 .divPortfolio >img {
-    width: 460px;
+    width: 420px;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
     
 }
 
