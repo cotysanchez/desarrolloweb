@@ -580,7 +580,7 @@ padding-top: 90px;
         color: #000000;
         margin-top: 40px;
         margin-left: 45px;
-        display: inline-block;  
+         
     }
 
     .tituloCajas {
@@ -625,7 +625,7 @@ padding-top: 90px;
         padding-left: 30px;
         border-color:  rgb(29, 28, 28);
         border-style: hidden;
-        display: block;
+        
     }
         
     .videoInicio {
@@ -634,7 +634,6 @@ padding-top: 90px;
         top: 1500px;
         left: 30px;
         margin-top: 15px;
-        display: block;
         overflow:auto;
     }
 
@@ -642,7 +641,7 @@ padding-top: 90px;
         width: 100%;
         height: 300px;
         background-color: rgb(188, 201, 206);
-        display: inline-block;
+        
     }
 
     .contenidoCajaNosotros {
@@ -683,7 +682,7 @@ padding-top: 90px;
     padding: 10px;
     border-color: #fff;
     border-style: groove;
-    display: block;
+    
     align-items: center;
 
 }
@@ -699,7 +698,7 @@ padding-top: 90px;
 .imagenDerecha {
     width: 432px;
     height: 386px;
-    display: block;  
+      
 }
 
     /******* Pagina Servicios *******/
