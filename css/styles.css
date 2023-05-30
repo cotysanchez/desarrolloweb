@@ -289,17 +289,13 @@ h3 {
 }
 
 .conteinerServicios1{
-    
-    flex-direction: column;
     height: 400px;
     background-color: rgb(188, 201, 206);
-    margin-bottom: 20px;
 }
 
 .conteinerServicios2{
     height: 400px;
     background-color: rgb(29, 28, 28);
-    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -371,7 +367,7 @@ h3 {
 }
 
 .campo label { 
-    color: #fff
+    color: #fff;
     font-weight: 16px;
     display: inline-block;
     font-size: 18px; 
@@ -724,7 +720,7 @@ padding-top: 90px;
     padding: 15px;
     vertical-align: middle;
     text-align: center;
-    color:#fff
+    color:#fff;
     font-size: 16px;
   
 }
@@ -779,45 +775,42 @@ padding-top: 90px;
 
 }
 .conteinerServicios1{
-    height: 400px;
-    
+    height: max-content;
     background-color: rgb(188, 201, 206);
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .conteinerServicios2{
-    height: 400px;
-    background-color: rgb(29, 28, 28);
-    margin-bottom: 20px;
-    color: #fff;
+    height: max-content;
+    padding-bottom: 20px;
+    
 }
 
 .containerTituloParrafo {
-    height: 355px;
     padding-top: 120px;
     
-    
 }
 
-.containerImagen1 {
-    padding-top: 25px;
-    padding-left: 120px;
+.containerImagen1{
+    margin: 0;
+    padding: 0;
 
-}
-
-.containerImagen2 {
-    padding-top: 25px;
-    padding-left: 0px;
-    padding-right: 180px;
 }
 
 
+.containerImagen1 img{
+    width:100%;
+}
 
+.containerImagen2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-
+.containerImagen2 img{
+    width: 100%;
+}
 
 
 
