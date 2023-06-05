@@ -700,7 +700,7 @@ h3 {
     grid-template-rows: 265px;
   }
   .divPortfolio > img {
-    width: 100% px;
+    width: 100%;
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0;
