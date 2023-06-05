@@ -1,0 +1,963 @@
+/********* Reset ********/
+* {  /* ----- */
+    margin:0;
+    padding:0;
+    text-decoration: none;  
+}
+
+/********** Fuentes **********/
+
+@font-face {
+    font-family: "PlayfairDisplay-SemiBold";
+    src: url("../assets/fuente/PlayfairDisplay-SemiBold.ttf");
+}
+
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../assets/fuente/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Italic";
+    src: url("../assets/fuente/Lato-Italic.ttf");
+}
+
+.playfairDisplay {
+    font-family: "PlayfairDisplay-SemiBold";
+    font-size: 25px;
+}
+
+.latoRegular {
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 18px;
+}
+
+.latoItalic {
+    font-family: "Lato-Italic", sans-serif;
+    font-size: 18px;
+}
+
+
+/********  Container Fluid *******/
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+.container-fluid2 {
+    height: 450px;
+    background-color: rgb(29, 28, 28);
+ 
+}
+
+.container-fluid-contacto {
+    background-color: rgb(198, 198, 233);
+    height: 560px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+/***************** Grid ********************/
+
+#grilla {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  450px 450px 320px;
+
+    grid-template-areas:
+    "content1    content1   content1"
+    "content2    content2   content2"
+    "content3    content3   content3";
+
+    gap: 10px;
+}
+
+#content1 {
+    display: grid;
+    grid-area: content1;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(221, 221, 221);
+}
+
+#content2 {
+    display: grid;
+    grid-area: content2;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(29, 28, 28);
+}
+
+#content3 {
+    display: grid;
+    grid-area: content3; 
+}
+
+
+/***** Etiquetas *****/
+
+header {
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 55px;
+    background-color: rgb(29, 28, 28);
+    
+}
+
+header nav ul {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: 100%;
+    margin: 0 10px;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(188, 201, 206)
+}
+
+ul {
+    list-style-type: none;
+    font-family: "Lato-Regular";
+}
+
+
+
+label {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+}
+
+
+input {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    margin: 5px;
+}
+
+
+textarea {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+}
+
+
+footer {
+    
+    background-color: rgb(29, 28, 28);
+    padding: 10px;
+    padding-left: 50px;
+
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600px;
+    font-family: "PlayfairDisplay";
+}
+
+h2 {
+    font-size: 34px;
+    font-family: "PlayfairDisplay";   
+}
+
+
+h3 {
+    font-family: "PlayfairDisplay";
+    font-size: 30px;
+}
+
+/********* PROPS/CAJAS ********/
+
+.props {
+    width: 360px;
+    height: 320px;
+    background-color: rgb(188, 201, 206);
+    color: #000000;
+    margin-top: 60px;
+    margin-left: 45px;
+    display: inline-block;
+}
+
+.props2 {
+    width: 300px;
+    height: 350px;
+    background-color: rgb(188, 201, 206);
+    color: #000000;
+    margin-top: 60px; 
+    margin-left: 40px;
+    margin-bottom: 160px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.propFormulario{
+    display: inline-block;
+    width: 520px;
+    height: 365px;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+.cajaNosotros {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(188, 201, 206);
+    margin-bottom: 50px;
+}
+
+.cajaNosotros2 {
+    display: flex;
+    padding: 6rem;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: rgb(29, 28, 28);
+}
+
+
+/******** Titulos *********/
+
+.titulo {
+    margin : 40px;
+    padding-top: 20px ;
+    text-align: center;
+}
+
+.tituloH1 {
+    color: rgb(255, 255, 255);
+    position:absolute;
+    z-index: 5;
+    top: 260px;
+    left: 50px;
+}
+
+.tituloSoluciones {
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+/******** Titulos Cajas Home ********/
+
+.tituloCajas {
+    padding: 20px 20px 0px 80px;
+}
+
+.tituloCajas2 {
+    padding: 20px 8px 0px 110px; 
+}
+
+.tituloCajas3 {
+    padding: 20px 10px 0px 70px;
+}
+
+/******** Cajas Servicios *******/
+
+.w-100{
+    width: 100vw;
+}
+
+.tituloCajaA {
+    padding: 25px 15px 0px 20px;
+}
+
+.tituloCajaB {
+    padding: 25px 8px 0px 20px;
+    
+}
+
+.tituloCajaC {
+    padding: 25px 10px 0px 20px;
+}
+
+.conteinerServicios1{
+    height: 400px;
+    background-color: rgb(188, 201, 206);
+}
+
+.conteinerServicios2{
+    height: 400px;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+}
+
+
+.containerTituloParrafo {
+    height: 355px;
+    padding-top: 120px;
+    
+}
+
+.containerImagen1 {
+    padding-top: 25px;
+    padding-left: 120px;
+
+}
+
+.containerImagen2 {
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 180px;
+}
+
+
+/******** Contenido de Cajas ********/
+
+.contenidoCajas {
+    padding: 30px 32px 20px 40px
+}
+
+.contenidoCajaLista{
+    padding: 10px 32px 25px 30px;
+    color: #fff;
+    
+}
+
+.contenidoCajaNosotros {
+    padding: 95px 40px 30px 40px;
+    font-size: 20px;    
+}
+
+
+.contenidoCajaNosotros2 {
+    padding: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff 
+}
+
+.contenidoCajaFormulario {
+    padding: 15px;
+    width: auto;
+    height: 520px;
+}
+
+.input-text {
+    font-size: 17px;
+    width: 70%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+    margin: 10px;
+}
+
+.label {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.campo label { 
+    color: #fff;
+    font-weight: 16px;
+    display: inline-block;
+    font-size: 18px; 
+    text-align: center;
+}
+
+.text-area {
+    padding: 15px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+
+.btn-primary {
+      color: #fff  
+}
+
+.rowContacto {
+height: 365px;
+display: flex;
+padding-top: 90px;
+}
+
+.colContactanos {
+    display: inline-block;
+    width: 520px;
+    height: 365px;
+    background-color: rgb(233, 233, 233);
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 40px;  
+}
+
+.parrafoContactanos {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+.iconosRedesSociales{
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 39);
+    width: 40px;
+    min-height: 40px;
+    align-items: center;
+    justify-content:center;
+    color: #fff;
+    position:relative;
+}
+
+.iconosRedesSocialesHover:hover {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 251, 251);   
+}
+
+
+/******** Imagenes ********/
+
+.imagenPortada {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenDerecha {
+    width: 432px;
+    height: 386px;
+    display: inline-block;
+}
+
+.centrado {
+    width: 73%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+/******* Contenedor Portfolio *******/
+
+.containerGrid{
+    display: grid;
+    width: 98%;
+    height: 900px;
+    
+    margin-left: 10px;
+    margin-bottom: 40px;
+    
+    background-color: rgb(221, 221, 221);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.divPortfolio >img {
+    width: 420px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+/************ Viedeo ***********/
+
+.videoInicio {
+    position: absolute;
+    top: 1120px;
+    left: 740px;
+    margin-top: 40px;
+}
+
+
+/*********** Bordes ************/
+
+.bordeComun {
+    width: 540px;
+    height: 315px;
+    margin-top: 79px;
+    margin-left: 75px;
+    padding-top: 25px;
+    padding-left: 40px;
+    border-color:  rgb(29, 28, 28);
+    border-style: hidden;
+    position: absolute;  
+}
+
+
+.bordeComun2 {
+    width: 432px;
+    height: 386px;
+    padding: 10px;
+    border-color: #fff;
+    border-style: groove;
+    display: flex;
+    align-items: center;
+}
+
+
+/*********** Footer **********/
+
+.footerCopyright {
+    font-family: "Lato-Regular";
+    font-size: 12px;
+    color: rgb(238, 222, 255);
+    padding-left: 500px;
+}
+
+
+/******** Vista Mobile - Media Queries ********/ 
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(29, 28, 28);
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    
+    header nav ul {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    header nav ul li {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    .titulo {
+        margin : 20px;
+        padding-top: 10px ;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .tituloH1 {
+        font-size: 20px;
+        top: 100px;
+        left: 30px;
+    }
+
+    #grilla {
+       
+        width: 100%;
+        background-color: rgb(221, 221, 221);
+        grid-template-columns: 100%;
+        grid-template-rows:  920px 740px 310px;
+
+        grid-template-areas:
+        "content1"
+        "content2"
+        "content3";
+        gap: 10px;
+    }
+
+    #content1 {
+        height: 920px;
+        grid-area: content1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: rgb(221, 221, 221);
+        align-items: center;
+        
+    }
+    
+    #content2 {
+        height: 700px;
+        grid-area: content2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(29, 28, 28);
+        
+    }
+    
+    #content3 {
+        height: 300px;
+        grid-area: content3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(221, 221, 221);
+        
+    }
+
+    .props {
+        width: 380px;
+        height: 260px;
+        background-color: rgb(188, 201, 206);
+        color: #000000;
+        margin-top: 40px;
+        margin-left: 45px;
+         
+    }
+
+    .tituloCajas {
+        padding: 25px 15px 0px 110px;
+        font-size: 23px;
+    }
+    
+    .tituloCajas2 {
+        padding: 25px 8px 0px 130px;
+        font-size: 23px;  
+    }
+    
+    .tituloCajas3 {
+        padding: 25px 10px 0px 100px;
+        font-size: 23px;
+    }
+    
+    .contenidoCajas {
+        padding: 25px 32px 20px 40px;
+        font-size: 14px;  
+    }
+
+    .tituloSoluciones {
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .contenidoCajaLista{
+        padding: 5px 15px 25px 10px;
+        font-size: 14px; 
+    }
+
+     
+    .bordeComun {
+        width: 85%;
+        height: 280px;
+        margin-top: 33px;
+        margin-left: 32px;
+        padding-top: 15px;
+        padding-left: 30px;
+        border-color:  rgb(29, 28, 28);
+        border-style: hidden;
+        
+    }
+        
+    .videoInicio {
+        width: 85%;
+        height: 300px;
+        top: 1500px;
+        left: 30px;
+        margin-top: 15px;
+        overflow:auto;
+    }
+
+    .cajaNosotros {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(188, 201, 206);
+        
+    }
+
+    .contenidoCajaNosotros {
+        padding: 50px 40px 10px 40px;
+        font-size: 14px;
+        justify-content: center; 
+        align-content: center;   
+    }
+
+    footer {
+        background-color: rgb(29, 28, 28);
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .footerCopyright {
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color: rgb(238, 222, 255);
+        padding-left: 25px;
+    }
+
+
+  /******* Pagina Nosotros *******/
+
+  .cajaNosotros2 {
+    display: block;
+    padding: 2rem;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    background-color:  rgb(29, 28, 28);
+   
+}
+
+.bordeComun2 {
+    width: 432px;
+    height: 320px;
+    padding: 10px;
+    border-color: #fff;
+    border-style: groove;
+    
+    align-items: center;
+
+}
+.contenidoCajaNosotros2 {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+  
+}
+
+.imagenDerecha {
+    width: 432px;
+    height: 386px;
+      
+}
+
+    /******* Pagina Servicios *******/
+
+    .container-fluid2 {
+        height: 1100px;
+        background-color: rgb(7, 7, 7);
+        --bs-gutter-x: 0;
+    }
+
+    .props2 {
+        width: 300px;
+        height: 290px;
+        background-color: rgb(188, 201, 206);;
+        color: #000000;
+        margin-top: 50px; 
+        margin-left: 60px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        text-align: justify;
+        
+    }
+
+    .tituloCajaA {
+        padding: 25px 15px 0px 100px;
+        font-size: 25px;
+    }
+    
+    .tituloCajaB {
+        padding: 25px 8px 0px 115px;
+        font-size: 25px; 
+    }
+    
+    .tituloCajaC {
+        padding: 25px 10px 0px 90px;
+        font-size: 25px;
+    }
+
+    .btn-primary {
+        
+        padding-top: -10px;
+        font-size: 14px;
+        size: 20px;
+
+}
+.conteinerServicios1{
+    height: max-content;
+    background-color: rgb(188, 201, 206);
+    padding-bottom: 20px;
+}
+
+.conteinerServicios2{
+    height: max-content;
+    padding-bottom: 20px;
+    
+}
+
+.containerTituloParrafo {
+    padding-top: 120px;
+    
+}
+
+.containerImagen1{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.containerImagen1 img{
+    width:100%;
+}
+
+.containerImagen2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.containerImagen2 img{
+    width: 100%;
+}
+
+
+
+
+
+
+  /******* Pagina Portfolio *******/
+
+.containerGrid {
+    width: 90%;
+    height: 2500px;
+    margin-left: 25px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    
+    background-color: rgb(199, 199, 199);
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 265px;
+}
+.divPortfolio >img {
+    width: 420px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    
+}
+
+  /******** Pagina Contacto ********/
+
+  .propFormulario{
+    
+    width: 416px;
+    height: 320px;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    margin-top: 19px;
+    margin-left: 11px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+
+}
+
+.contenidoCajaFormulario {
+    padding: 15px;
+    width: 400px; 
+}
+
+.input-text {
+    font-size: 12px;
+    width: 60%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+    margin: 5px;
+}
+
+.label {
+    padding: 12px;
+    font-size: 14px;
+    color: #fff;
+    
+}
+
+.campo label { 
+    color: #fff;
+    font-weight: 16px;
+    display: inline-block;
+    font-size: 14px; 
+    text-align: center;
+}
+
+.text-area {
+    padding: 10px;
+    border-radius: 10px;
+    width: 380px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-primary {
+    display: grid;
+    padding-top: -10px;
+    font-size: 14px;
+    size: 15px;
+
+}
+
+.container-fluid-contacto {
+    height: 780px;
+    background-color: rgb(200, 200, 252);
+    padding-left: 3px;
+    padding-right: 15px;
+    padding-top: 30px;
+
+}
+h3 {
+    font-family: "PlayfairDisplay";
+    font-size: 25px;
+}
+
+.rowContacto {
+    height: 365px;
+    display: inline;
+    padding-top: 5px;
+    }
+
+.colContactanos {
+   
+    width: 416px;
+    height: 365px;
+    background-color: rgb(233, 233, 233);
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+
+.parrafoContactanos {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+
+}
+
+.iconosRedesSociales{
+    
+    border-radius: 50%;
+    background-color: rgb(36, 36, 39);
+    width: 40px;
+    min-height: 40px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content:center;
+    color: #fff;
+    position:relative;
+
+}
+
+.iconosRedesSocialesHover:hover {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 251, 251);
+}
+
+
+}
+
