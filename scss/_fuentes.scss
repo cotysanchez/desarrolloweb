@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "PlayfairDisplay-SemiBold";
+    src: url("../assets/fuente/PlayfairDisplay-SemiBold.ttf");
+}
+
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../assets/fuente/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Italic";
+    src: url("../assets/fuente/Lato-Italic.ttf");
+}
+
+.playfairDisplay {
+    font-family: "PlayfairDisplay-SemiBold";
+    font-size: 25px;
+}
+
+.latoRegular {
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 18px;
+}
+
+.latoItalic {
+    font-family: "Lato-Italic", sans-serif;
+    font-size: 18px;
+}

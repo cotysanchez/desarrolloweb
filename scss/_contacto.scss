@@ -1,0 +1,127 @@
+.titulo {
+    margin : 40px;
+    padding-top: 20px ;
+    text-align: center;
+}
+
+
+
+
+label {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+}
+
+
+input {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    margin: 5px;
+}
+
+
+textarea {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+}
+
+.propFormulario{
+    display: inline-block;
+    width: 520px;
+    height: 365px;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+.contenidoCajaFormulario {
+    padding: 15px;
+    width: auto;
+    height: 520px;
+}
+
+.input-text {
+    font-size: 17px;
+    width: 70%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    height: 25px;
+    margin: 10px;
+}
+
+.label {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.campo label { 
+    color: #fff;
+    font-weight: 16px;
+    display: inline-block;
+    font-size: 18px; 
+    text-align: center;
+}
+
+.text-area {
+    padding: 15px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+
+.btn-primary {
+      color: #fff  
+}
+
+
+.container-fluid-contacto {
+    background-color: rgb(198, 198, 233);
+    height: 560px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+
+.rowContacto {
+height: 365px;
+display: flex;
+padding-top: 90px;
+}
+
+.colContactanos {
+    display: inline-block;
+    width: 520px;
+    height: 365px;
+    background-color: rgb(233, 233, 233);
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 40px;  
+}
+
+.parrafoContactanos {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+.iconosRedesSociales{
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 39);
+    width: 40px;
+    min-height: 40px;
+    align-items: center;
+    justify-content:center;
+    color: #fff;
+    position:relative;
+}
+
+.iconosRedesSocialesHover:hover {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 251, 251);   
+}

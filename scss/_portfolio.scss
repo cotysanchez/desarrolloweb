@@ -1,0 +1,25 @@
+.titulo {
+    margin : 40px;
+    padding-top: 20px ;
+    text-align: center;
+}
+
+.containerGrid{
+    display: grid;
+    width: 98%;
+    height: 900px;
+    
+    margin-left: 10px;
+    margin-bottom: 40px;
+    
+    background-color: rgb(221, 221, 221);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.divPortfolio >img {
+    width: 420px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}

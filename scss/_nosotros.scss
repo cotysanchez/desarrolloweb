@@ -1,0 +1,51 @@
+.titulo {
+    margin : 40px;
+    padding-top: 20px ;
+    text-align: center;
+}
+
+
+.cajaNosotros {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(188, 201, 206);
+    margin-bottom: 50px;
+}
+
+.cajaNosotros2 {
+    display: flex;
+    padding: 6rem;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: rgb(29, 28, 28);
+}
+
+.bordeComun2 {
+    width: 432px;
+    height: 386px;
+    padding: 10px;
+    border-color: #fff;
+    border-style: groove;
+    display: flex;
+    align-items: center;
+}
+
+.contenidoCajaNosotros {
+    padding: 95px 40px 30px 40px;
+    font-size: 20px;    
+}
+
+
+.contenidoCajaNosotros2 {
+    padding: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff 
+}
+
+.imagenDerecha {
+    width: 432px;
+    height: 386px;
+    display: inline-block;
+}
