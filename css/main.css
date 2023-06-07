@@ -463,7 +463,7 @@ h3 {
   padding-left: 500px;
 }
 
-/******** Vista Mobile - Media Queries ********/
+/******** Vista Mobile - Media Queries  max width 480 px ********/
 @media (max-width: 480px) {
   header {
     flex-direction: row;
