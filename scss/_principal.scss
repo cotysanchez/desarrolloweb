@@ -115,3 +115,527 @@
     padding: 95px 40px 30px 40px;
     font-size: 20px;    
 }
+
+
+/******** Vista Mobile - Media Queries max width 480 - Página Home ********/ 
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(29, 28, 28);
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    
+    header nav ul {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    header nav ul li {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    .titulo {
+        margin : 20px;
+        padding-top: 10px ;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .tituloH1 {
+        font-size: 20px;
+        top: 100px;
+        left: 30px;
+    }
+
+    #grilla {
+       
+        width: 100%;
+        background-color: rgb(221, 221, 221);
+        grid-template-columns: 100%;
+        grid-template-rows:  920px 740px 310px;
+
+        grid-template-areas:
+        "content1"
+        "content2"
+        "content3";
+        gap: 10px;
+    }
+
+    #content1 {
+        height: 920px;
+        grid-area: content1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: rgb(221, 221, 221);
+        align-items: center;
+        
+    }
+    
+    #content2 {
+        height: 700px;
+        grid-area: content2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(29, 28, 28);
+        
+    }
+    
+    #content3 {
+        height: 300px;
+        grid-area: content3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(221, 221, 221);
+        
+    }
+
+    .props {
+        width: 380px;
+        height: 260px;
+        background-color: rgb(188, 201, 206);
+        color: #000000;
+        margin-top: 40px;
+        margin-left: 45px;
+         
+    }
+
+    .tituloCajas {
+        padding: 25px 15px 0px 110px;
+        font-size: 23px;
+    }
+    
+    .tituloCajas2 {
+        padding: 25px 8px 0px 130px;
+        font-size: 23px;  
+    }
+    
+    .tituloCajas3 {
+        padding: 25px 10px 0px 100px;
+        font-size: 23px;
+    }
+    
+    .contenidoCajas {
+        padding: 25px 32px 20px 40px;
+        font-size: 14px;  
+    }
+
+    .tituloSoluciones {
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .contenidoCajaLista{
+        padding: 5px 15px 25px 10px;
+        font-size: 14px; 
+    }
+
+     
+    .bordeComun {
+        width: 85%;
+        height: 280px;
+        margin-top: 33px;
+        margin-left: 32px;
+        padding-top: 15px;
+        padding-left: 30px;
+        border-color:  rgb(29, 28, 28);
+        border-style: hidden;
+        
+    }
+        
+    .videoInicio {
+        width: 85%;
+        height: 300px;
+        top: 1500px;
+        left: 30px;
+        margin-top: 15px;
+        overflow:auto;
+    }
+
+    .cajaNosotros {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(188, 201, 206);
+        
+    }
+
+    .contenidoCajaNosotros {
+        padding: 50px 40px 10px 40px;
+        font-size: 14px;
+        justify-content: center; 
+        align-content: center;   
+    }
+
+    footer {
+        background-color: rgb(29, 28, 28);
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .footerCopyright {
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color: rgb(238, 222, 255);
+        padding-left: 25px;
+    }
+
+
+ }
+
+ /***** Media Querie min -481 px - max 600px - Página Home  ******/
+@media (min-width: 481px) and (max-width: 600px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(29, 28, 28);
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    
+    header nav ul {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    header nav ul li {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    .titulo {
+        margin : 20px;
+        padding-top: 10px ;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .tituloH1 {
+        font-size: 20px;
+        top: 100px;
+        left: 30px;
+    }
+
+    #grilla {
+       
+        width: 100%;
+        background-color: rgb(221, 221, 221);
+        grid-template-columns: 100%;
+        grid-template-rows:  920px 740px 310px;
+
+        grid-template-areas:
+        "content1"
+        "content2"
+        "content3";
+        gap: 10px;
+    }
+
+    #content1 {
+        height: 920px;
+        grid-area: content1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: rgb(221, 221, 221);
+        align-items: center;
+        
+    }
+    
+    #content2 {
+        height: 700px;
+        grid-area: content2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(29, 28, 28);
+        
+    }
+    
+    #content3 {
+        height: 300px;
+        grid-area: content3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(221, 221, 221);
+        
+    }
+
+    .props {
+        width: 380px;
+        height: 260px;
+        background-color: rgb(188, 201, 206);
+        color: #000000;
+        margin-top: 40px;
+        margin-left: 110px;
+         
+    }
+
+    .tituloCajas {
+        padding: 25px 15px 0px 110px;
+        font-size: 23px;
+    }
+    
+    .tituloCajas2 {
+        padding: 25px 8px 0px 130px;
+        font-size: 23px;  
+    }
+    
+    .tituloCajas3 {
+        padding: 25px 10px 0px 100px;
+        font-size: 23px;
+    }
+    
+    .contenidoCajas {
+        padding: 25px 32px 20px 40px;
+        font-size: 14px;  
+    }
+
+    .tituloSoluciones {
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .contenidoCajaLista{
+        padding: 5px 15px 25px 10px;
+        font-size: 14px; 
+    }
+
+     
+    .bordeComun {
+        width: 85%;
+        height: 280px;
+        margin-top: 33px;
+        margin-left: 32px;
+        padding-top: 15px;
+        padding-left: 30px;
+        border-color:  rgb(29, 28, 28);
+        border-style: hidden;
+        
+    }
+        
+    .videoInicio {
+        width: 85%;
+        height: 300px;
+        top: 1500px;
+        left: 30px;
+        margin-top: 15px;
+        overflow:auto;
+    }
+
+    .cajaNosotros {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(188, 201, 206);
+        
+    }
+
+    .contenidoCajaNosotros {
+        padding: 50px 40px 10px 40px;
+        font-size: 14px;
+        justify-content: center; 
+        align-content: center;   
+    }
+
+    footer {
+        background-color: rgb(29, 28, 28);
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    .footerCopyright {
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color: rgb(238, 222, 255);
+        padding-left: 25px;
+    }
+}
+
+/****** Media Querie min width 601px and max width: 900px - Página Home  ********/
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(29, 28, 28);
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    
+    header nav ul {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    header nav ul li {
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    .titulo {
+        margin : 20px;
+        padding-top: 10px ;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .tituloH1 {
+        font-size: 25px;
+        top: 100px;
+        left: 30px;
+    }
+
+    #grilla {
+       
+        width: 100%;
+        background-color: rgb(221, 221, 221);
+        grid-template-columns: 100%;
+        grid-template-rows:  410px 675px 240px;
+
+        grid-template-areas:
+        "content1"
+        "content2"
+        "content3";
+        gap: 5px;
+    }
+
+    #content1 {
+        
+        grid-area: content1;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(221, 221, 221);
+        align-items: center;
+        
+    }
+    
+    #content2 {
+        
+        grid-area: content2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgb(29, 28, 28);
+        
+    }
+    
+    #content3 {
+       
+        grid-area: content3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(221, 221, 221);
+        
+    }
+
+    .props {
+        width: 270px;
+        height: 320px;
+        background-color: rgb(188, 201, 206);
+        color: #000000;
+        margin-top: 5px;
+        margin-left: 15px;
+         
+    }
+
+    .tituloCajas {
+        padding: 25px 15px 0px 55px;
+        font-size: 23px;
+    }
+    
+    .tituloCajas2 {
+        padding: 25px 8px 0px 75px;
+        font-size: 23px;  
+    }
+    
+    .tituloCajas3 {
+        padding: 25px 10px 0px 50px;
+        font-size: 23px;
+    }
+    
+    .contenidoCajas {
+        padding: 25px 32px 20px 40px;
+        font-size: 14px;  
+    }
+
+    .tituloSoluciones {
+        padding-top: 3px;
+        padding-left: 110px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .contenidoCajaLista{
+        padding: 5px 25px 25px 10px;
+        font-size: 14px; 
+    }
+
+     
+    .bordeComun {
+        width: 85%;
+        height: 280px;
+        margin-top: 33px;
+        margin-left: 35px;
+        padding-top: 15px;
+        padding-left: 190px;
+        border-color:  rgb(29, 28, 28);
+        border-style: hidden;
+        
+    }
+        
+    .videoInicio {
+        width: 85%;
+        height: 300px;
+        top: 1140px;
+        left: 165px;
+        margin-top: 15px;
+        
+    }
+
+    .cajaNosotros {
+        width: 100%;
+        height: 250px;
+        background-color: rgb(188, 201, 206);
+        
+    }
+
+    .contenidoCajaNosotros {
+        padding: 50px 40px 10px 40px;
+        font-size: 14px;
+        justify-content: center; 
+        align-content: center;   
+    }
+
+    footer {
+        background-color: rgb(29, 28, 28);
+        padding-top: 20px;
+        padding-left: 260px;
+    }
+
+    .footerCopyright {
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        color: rgb(238, 222, 255);
+        padding-left: 25px;
+    }
+    }
