@@ -437,7 +437,7 @@ h3 {
 
 
 /***** Media Querie min -481 px - max 600px ******/
-@media (min-width: 481px) and (max-width: 600px) {
+@media (max-width: 600px) {
     header {
         flex-direction: row;
         width: 100%;
@@ -876,7 +876,7 @@ h3 {
 
 /****** Media Querie min width 601px and max width: 900px ********/
 
-@media (min-width: 601px) and (max-width: 900px) {
+@media (max-width: 900px) {
     header {
         flex-direction: row;
         width: 100%;
@@ -1313,7 +1313,7 @@ h3 {
 
 /****** Media Querie min width 601px and max width: 900px ********/
 
-@media (min-width: 901px) and (max-width: 1300px) {
+@media (max-width: 1300px) {
     header {
         flex-direction: row;
         width: 100%;
