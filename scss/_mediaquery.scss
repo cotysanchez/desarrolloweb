@@ -40,12 +40,10 @@
     }
 
     #grilla {
-       
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
         grid-template-rows:  920px 740px 310px;
-
         grid-template-areas:
         "content1"
         "content2"
@@ -59,8 +57,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         background-color: rgb(221, 221, 221);
-        align-items: center;
-        
+        align-items: center; 
     }
     
     #content2 {
@@ -68,8 +65,7 @@
         grid-area: content2;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        background-color: rgb(29, 28, 28);
-        
+        background-color: rgb(29, 28, 28);  
     }
     
     #content3 {
@@ -121,7 +117,6 @@
         font-size: 14px; 
     }
 
-     
     .bordeComun {
         width: 85%;
         height: 280px;
@@ -285,9 +280,7 @@
     margin-left: 25px;
     margin-right: 40px;
     margin-bottom: 10px;
-    
     background-color: rgb(199, 199, 199);
-
     grid-template-columns: 1fr;
     grid-template-rows: 265px;
 }
@@ -455,7 +448,6 @@ h3 {
     }
 
     #grilla {
-       
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
@@ -584,7 +576,6 @@ h3 {
 
 .cajaNosotros2 {
     display: block;
-    
     margin-bottom: 5px;
     justify-content: space-between;
     background-color:  rgb(29, 28, 28);
@@ -607,13 +598,11 @@ h3 {
     text-align: center;
     color:#fff;
     font-size: 16px;
-  
 }
 
 .imagenDerecha {
     width: 432px;
-    height: 386px;
-      
+    height: 386px;    
 }
 
   /******* Pagina Servicios *******/
@@ -872,7 +861,6 @@ h3 {
     }
 
     #grilla {
-       
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
