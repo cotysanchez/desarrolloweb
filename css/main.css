@@ -695,6 +695,10 @@ textarea {
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0;
+    transition: transform 0.3s ease;
+  }
+  .divPortfolio > img:hover {
+    transform: scale(1.1);
   }
   /******** Pagina Contacto ********/
   .propFormulario {
@@ -1034,6 +1038,10 @@ textarea {
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0;
+    transition: transform 0.3s ease;
+  }
+  .divPortfolio > img:hover {
+    transform: scale(1.1);
   }
   /******** Pagina Contacto ********/
   .propFormulario {
@@ -1370,6 +1378,10 @@ textarea {
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  .divPortfolio > img:hover {
+    transform: scale(1.1);
   }
   /******** Pagina Contacto ********/
   .propFormulario {
@@ -1706,6 +1718,10 @@ textarea {
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  .divPortfolio > img:hover {
+    transform: scale(1.1);
   }
   /******** Pagina Contacto ********/
   .propFormulario {
