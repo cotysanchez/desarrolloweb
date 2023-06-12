@@ -77,8 +77,7 @@
         grid-area: content3;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        background-color: rgb(221, 221, 221);
-        
+        background-color: rgb(221, 221, 221);  
     }
 
     .props {
@@ -87,8 +86,7 @@
         background-color: rgb(188, 201, 206);
         color: #000000;
         margin-top: 40px;
-        margin-left: 45px;
-         
+        margin-left: 45px; 
     }
 
     .tituloCajas {
@@ -132,8 +130,7 @@
         padding-top: 15px;
         padding-left: 30px;
         border-color:  rgb(29, 28, 28);
-        border-style: hidden;
-        
+        border-style: hidden; 
     }
         
     .videoInicio {
@@ -149,7 +146,6 @@
         width: 100%;
         height: 300px;
         background-color: rgb(188, 201, 206);
-        
     }
 
     .contenidoCajaNosotros {
@@ -181,7 +177,6 @@
     margin-bottom: 5px;
     justify-content: space-between;
     background-color:  rgb(29, 28, 28);
-   
 }
 
 .bordeComun2 {
@@ -190,7 +185,6 @@
     padding: 10px;
     border-color: #fff;
     border-style: groove;
-    
     align-items: center;
 
 }
@@ -200,18 +194,16 @@
     text-align: center;
     color:#fff;
     font-size: 16px;
-  
 }
 
 .imagenDerecha {
     width: 432px;
-    height: 386px;
-      
+    height: 386px;    
 }
 
-    /******* Pagina Servicios *******/
+/******* Pagina Servicios *******/
 
-    .container-fluid2 {
+ .container-fluid2 {
         height: 1300px;
         background-color: rgb(7, 7, 7);
         --bs-gutter-x: 0;
@@ -225,8 +217,7 @@
         margin-left: 60px;
         margin-bottom: 20px;
         margin-right: 40px;
-        text-align: justify;
-        
+        text-align: justify;   
     }
 
     .tituloCajaA {
@@ -249,7 +240,6 @@
         padding-top: -10px;
         font-size: 14px;
         size: 20px;
-
 }
 .conteinerServicios1{
     height: max-content;
@@ -271,9 +261,7 @@
 .containerImagen1{
     margin: 0;
     padding: 0;
-
 }
-
 
 .containerImagen1 img{
     width:100%;
@@ -288,8 +276,6 @@
 .containerImagen2 img{
     width: 100%;
 }
-
-
 
   /******* Pagina Portfolio *******/
 
@@ -310,8 +296,7 @@
     padding-top: 0;
     padding-left: 0;
     padding-bottom: 0;
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;   
 }
 .divPortfolio > img:hover {
     transform: scale(1.1);
@@ -320,7 +305,6 @@
   /******** Pagina Contacto ********/
 
   .propFormulario{
-    
     width: 416px;
     height: 320px;
     background-color: rgb(29, 28, 28);
@@ -329,7 +313,6 @@
     margin-left: 11px;
     margin-bottom: 15px;
     margin-right: 5px;
-
 }
 
 .contenidoCajaFormulario {
@@ -350,8 +333,7 @@
 .label {
     padding: 12px;
     font-size: 14px;
-    color: #fff;
-    
+    color: #fff;  
 }
 
 .campo label { 
@@ -375,7 +357,6 @@
     padding-top: -10px;
     font-size: 14px;
     size: 15px;
-
 }
 
 .container-fluid-contacto {
@@ -384,7 +365,6 @@
     padding-left: 3px;
     padding-right: 15px;
     padding-top: 30px;
-
 }
 h3 {
     font-family: "PlayfairDisplay";
@@ -398,7 +378,6 @@ h3 {
     }
 
 .colContactanos {
-   
     width: 416px;
     height: 365px;
     background-color: rgb(233, 233, 233);
@@ -414,11 +393,9 @@ h3 {
     padding-right: 30px;
     padding-bottom: 30px;
     font-size: 14px;
-
 }
 
 .iconosRedesSociales{
-    
     border-radius: 50%;
     background-color: rgb(36, 36, 39);
     width: 40px;
@@ -428,7 +405,6 @@ h3 {
     justify-content:center;
     color: #fff;
     position:relative;
-
 }
 
 .iconosRedesSocialesHover:hover {
@@ -436,12 +412,10 @@ h3 {
     color: rgb(2, 2, 2);
     background-color: rgb(255, 251, 251);
 }
-
-
 }
 
-
 /***** Media Querie min -481 px - max 600px ******/
+
 @media (min-width: 481px) and (max-width: 600px) {
     header {
         flex-direction: row;
@@ -486,7 +460,6 @@ h3 {
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
         grid-template-rows:  920px 740px 310px;
-
         grid-template-areas:
         "content1"
         "content2"
@@ -500,8 +473,7 @@ h3 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         background-color: rgb(221, 221, 221);
-        align-items: center;
-        
+        align-items: center;  
     }
     
     #content2 {
@@ -509,8 +481,7 @@ h3 {
         grid-area: content2;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        background-color: rgb(29, 28, 28);
-        
+        background-color: rgb(29, 28, 28);  
     }
     
     #content3 {
@@ -519,7 +490,6 @@ h3 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
-        
     }
 
     .props {
@@ -528,8 +498,7 @@ h3 {
         background-color: rgb(188, 201, 206);
         color: #000000;
         margin-top: 40px;
-        margin-left: 110px;
-         
+        margin-left: 110px; 
     }
 
     .tituloCajas {
@@ -564,7 +533,6 @@ h3 {
         font-size: 14px; 
     }
 
-     
     .bordeComun {
         width: 85%;
         height: 280px;
@@ -573,8 +541,7 @@ h3 {
         padding-top: 15px;
         padding-left: 30px;
         border-color:  rgb(29, 28, 28);
-        border-style: hidden;
-        
+        border-style: hidden;   
     }
         
     .videoInicio {
@@ -589,8 +556,7 @@ h3 {
     .cajaNosotros {
         width: 100%;
         height: 300px;
-        background-color: rgb(188, 201, 206);
-        
+        background-color: rgb(188, 201, 206); 
     }
 
     .contenidoCajaNosotros {
@@ -616,7 +582,7 @@ h3 {
 
   /******* Pagina Nosotros *******/
 
-  .cajaNosotros2 {
+.cajaNosotros2 {
     display: block;
     
     margin-bottom: 5px;
@@ -650,9 +616,9 @@ h3 {
       
 }
 
-    /******* Pagina Servicios *******/
+  /******* Pagina Servicios *******/
 
-    .container-fluid2 {
+.container-fluid2 {
         height: 1100px;
         background-color: rgb(7, 7, 7);
         --bs-gutter-x: 0;
@@ -701,19 +667,16 @@ h3 {
 
 .conteinerServicios2{
     height: max-content;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px; 
 }
 
 .containerTituloParrafo {
     padding-top: 120px;
-    
 }
 
 .containerImagen1{
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -731,7 +694,6 @@ h3 {
     width: 100%;
 }
 
-
   /******* Pagina Portfolio *******/
 
 .containerGrid {
@@ -740,9 +702,7 @@ h3 {
     margin-left: 25px;
     margin-right: 40px;
     margin-bottom: 10px;
-    
     background-color: rgb(199, 199, 199);
-
     grid-template-columns: 1fr;
     grid-template-rows: 265px;
 }
@@ -757,7 +717,6 @@ h3 {
     transform: scale(1.1);
 }
 
-
   /******** Pagina Contacto ********/
 
   .propFormulario{
@@ -770,7 +729,6 @@ h3 {
     margin-left: 11px;
     margin-bottom: 15px;
     margin-right: 5px;
-
 }
 
 .contenidoCajaFormulario {
@@ -792,7 +750,6 @@ h3 {
     padding: 12px;
     font-size: 14px;
     color: #fff;
-    
 }
 
 .campo label { 
@@ -816,7 +773,6 @@ h3 {
     padding-top: -10px;
     font-size: 14px;
     size: 15px;
-
 }
 
 .container-fluid-contacto {
@@ -825,8 +781,8 @@ h3 {
     padding-left: 3px;
     padding-right: 15px;
     padding-top: 30px;
-
 }
+
 h3 {
     font-family: "PlayfairDisplay";
     font-size: 25px;
@@ -839,7 +795,6 @@ h3 {
     }
 
 .colContactanos {
-   
     width: 440px;
     height: 300px;
     background-color: rgb(233, 233, 233);
@@ -855,11 +810,9 @@ h3 {
     padding-right: 30px;
     padding-bottom: 30px;
     font-size: 14px;
-
 }
 
 .iconosRedesSociales{
-    
     border-radius: 50%;
     background-color: rgb(36, 36, 39);
     width: 40px;
@@ -869,7 +822,6 @@ h3 {
     justify-content:center;
     color: #fff;
     position:relative;
-
 }
 
 .iconosRedesSocialesHover:hover {
@@ -877,11 +829,7 @@ h3 {
     color: rgb(2, 2, 2);
     background-color: rgb(255, 251, 251);
 }
-
-
 }
-
-
 
 /****** Media Querie min width 601px and max width: 900px ********/
 
@@ -929,7 +877,6 @@ h3 {
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
         grid-template-rows:  410px 675px 240px;
-
         grid-template-areas:
         "content1"
         "content2"
@@ -937,32 +884,26 @@ h3 {
         gap: 5px;
     }
 
-    #content1 {
-        
+    #content1 { 
         grid-area: content1;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
         align-items: center;
-        
     }
     
     #content2 {
-        
         grid-area: content2;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: rgb(29, 28, 28);
-        
     }
     
     #content3 {
-       
         grid-area: content3;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
-        
     }
 
     .props {
@@ -971,8 +912,7 @@ h3 {
         background-color: rgb(188, 201, 206);
         color: #000000;
         margin-top: 5px;
-        margin-left: 15px;
-         
+        margin-left: 15px;  
     }
 
     .tituloCajas {
@@ -1017,7 +957,6 @@ h3 {
         padding-left: 190px;
         border-color:  rgb(29, 28, 28);
         border-style: hidden;
-        
     }
         
     .videoInicio {
@@ -1026,14 +965,12 @@ h3 {
         top: 1140px;
         left: 165px;
         margin-top: 15px;
-        
     }
 
     .cajaNosotros {
         width: 100%;
         height: 250px;
         background-color: rgb(188, 201, 206);
-        
     }
 
     .contenidoCajaNosotros {
@@ -1064,7 +1001,6 @@ h3 {
     margin-bottom: 5px;
     justify-content: space-between;
     background-color:  rgb(29, 28, 28);
-   
 }
 
 .bordeComun2 {
@@ -1073,9 +1009,7 @@ h3 {
     padding: 10px;
     border-color: #fff;
     border-style: groove;
-    
     align-items: center;
-
 }
 .contenidoCajaNosotros2 {
     padding: 15px;
@@ -1083,13 +1017,11 @@ h3 {
     text-align: center;
     color:#fff;
     font-size: 16px;
-  
 }
 
 .imagenDerecha {
     width: 432px;
-    height: 386px;
-      
+    height: 386px;  
 }
 
     /******* Pagina Servicios *******/
@@ -1111,7 +1043,7 @@ h3 {
         margin-left: 5px;
         margin-bottom: 5px;
         margin-right: 5px;
-        text-align: justify;   
+        text-align: justify;    
     }
 
     .tituloCajaA {
@@ -1134,7 +1066,6 @@ h3 {
         padding-top: 5px;
         font-size: 14px;
         size: 10px;
-
 }
 .conteinerServicios1{
     height: max-content;
@@ -1181,9 +1112,7 @@ h3 {
     margin-left: 10px;
     margin-right: 40px;
     margin-bottom: 5px;
-    
     background-color: rgb(199, 199, 199);
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 180px 180px 180px;
 }
@@ -1210,7 +1139,6 @@ h3 {
     margin-left: 11px;
     margin-bottom: 15px;
     margin-right: 5px;
-
 }
 
 .contenidoCajaFormulario {
@@ -1231,8 +1159,7 @@ h3 {
 .label {
     padding: 12px;
     font-size: 14px;
-    color: #fff;
-    
+    color: #fff; 
 }
 
 .campo label { 
@@ -1265,6 +1192,7 @@ h3 {
     padding-right: 15px;
     padding-top: 30px;
 }
+
 h3 {
     font-family: "PlayfairDisplay";
     font-size: 25px;
@@ -1295,7 +1223,6 @@ h3 {
 }
 
 .iconosRedesSociales{
-    
     border-radius: 50%;
     background-color: rgb(36, 36, 39);
     width: 40px;
@@ -1305,7 +1232,6 @@ h3 {
     justify-content:center;
     color: #fff;
     position:relative;
-
 }
 
 .iconosRedesSocialesHover:hover {
@@ -1370,31 +1296,25 @@ h3 {
     }
 
     #content1 {
-        
         grid-area: content1;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
         align-items: center;
-        
     }
     
     #content2 {
-        
         grid-area: content2;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: rgb(29, 28, 28);
-        
     }
     
     #content3 {
-       
         grid-area: content3;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         background-color: rgb(221, 221, 221);
-        
     }
 
     .props {
@@ -1404,7 +1324,6 @@ h3 {
         color: #000000;
         margin-top: 5px;
         margin-left: 15px;
-         
     }
 
     .tituloCajas {
@@ -1449,7 +1368,6 @@ h3 {
         padding-left: 190px;
         border-color:  rgb(29, 28, 28);
         border-style: hidden;
-        
     }
         
     .videoInicio {
@@ -1458,14 +1376,12 @@ h3 {
         top: 1140px;
         left: 165px;
         margin-top: 15px;
-        
     }
 
     .cajaNosotros {
         width: 100%;
         height: 250px;
         background-color: rgb(188, 201, 206);
-        
     }
 
     .contenidoCajaNosotros {
@@ -1488,14 +1404,12 @@ h3 {
         padding-left: 25px;
     }
 
-
   /******* Pagina Nosotros *******/
 
   .cajaNosotros2 {
     margin-bottom: 5px;
     justify-content: space-between;
     background-color:  rgb(29, 28, 28);
-   
 }
 
 .bordeComun2 {
@@ -1504,9 +1418,7 @@ h3 {
     padding: 10px;
     border-color: #fff;
     border-style: groove;
-    
     align-items: center;
-
 }
 .contenidoCajaNosotros2 {
     padding: 15px;
@@ -1514,13 +1426,11 @@ h3 {
     text-align: center;
     color:#fff;
     font-size: 16px;
-  
 }
 
 .imagenDerecha {
     width: 432px;
-    height: 386px;
-      
+    height: 386px;  
 }
 
     /******* Pagina Servicios *******/
@@ -1543,8 +1453,6 @@ h3 {
         margin-bottom: 5px;
         margin-right: 5px;
         text-align: justify;
-        
-        
     }
 
     .tituloCajaA {
@@ -1577,19 +1485,16 @@ h3 {
 
 .conteinerServicios2{
     height: max-content;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;   
 }
 
 .containerTituloParrafo {
-    padding-top: 120px;
-    
+    padding-top: 120px;   
 }
 
 .containerImagen1{
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -1615,9 +1520,7 @@ h3 {
     margin-left: 10px;
     margin-right: 40px;
     margin-bottom: 5px;
-    
     background-color: rgb(199, 199, 199);
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 180px 180px 180px;
 }
@@ -1627,7 +1530,6 @@ h3 {
     padding-left: 10px;
     padding-bottom: 5px;
     transition: transform 0.3s ease;
-    
 }
 .divPortfolio > img:hover {
     transform: scale(1.1);
@@ -1637,7 +1539,6 @@ h3 {
   /******** Pagina Contacto ********/
 
   .propFormulario{
-    
     width: 440px;
     height: 320px;
     background-color: rgb(29, 28, 28);
@@ -1646,7 +1547,6 @@ h3 {
     margin-left: 11px;
     margin-bottom: 15px;
     margin-right: 5px;
-
 }
 
 .contenidoCajaFormulario {
@@ -1668,7 +1568,6 @@ h3 {
     padding: 12px;
     font-size: 14px;
     color: #fff;
-    
 }
 
 .campo label { 
@@ -1692,7 +1591,6 @@ h3 {
     padding-top: -10px;
     font-size: 14px;
     size: 15px;
-
 }
 
 .container-fluid-contacto {
@@ -1701,7 +1599,6 @@ h3 {
     padding-left: 3px;
     padding-right: 15px;
     padding-top: 30px;
-
 }
 h3 {
     font-family: "PlayfairDisplay";
@@ -1731,11 +1628,9 @@ h3 {
     padding-right: 30px;
     padding-bottom: 30px;
     font-size: 14px;
-
 }
 
 .iconosRedesSociales{
-    
     border-radius: 50%;
     background-color: rgb(36, 36, 39);
     width: 40px;
@@ -1745,7 +1640,6 @@ h3 {
     justify-content:center;
     color: #fff;
     position:relative;
-
 }
 
 .iconosRedesSocialesHover:hover {
