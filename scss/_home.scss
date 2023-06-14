@@ -40,6 +40,7 @@
     grid-area: content1;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(221, 221, 221);
+    justify-items: center;
 }
 
 #content2 {
@@ -60,7 +61,7 @@
     background-color: rgb(188, 201, 206);
     color: #000000;
     margin-top: 60px;
-    margin-left: 45px;
+    
     display: inline-block;
 }
 

@@ -119,6 +119,7 @@ footer {
   grid-area: content1;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgb(221, 221, 221);
+  justify-items: center;
 }
 
 #content2 {
@@ -139,7 +140,6 @@ footer {
   background-color: rgb(188, 201, 206);
   color: #000000;
   margin-top: 60px;
-  margin-left: 45px;
   display: inline-block;
 }
 
@@ -500,6 +500,7 @@ textarea {
     grid-template-rows: 1fr 1fr 1fr;
     background-color: rgb(221, 221, 221);
     align-items: center;
+    justify-items: center;
   }
   #content2 {
     height: 700px;
@@ -521,7 +522,7 @@ textarea {
     background-color: rgb(188, 201, 206);
     color: #000000;
     margin-top: 40px;
-    margin-left: 45px;
+    margin-left: 20px;
   }
   .tituloCajas {
     padding: 25px 15px 0px 110px;
@@ -1328,7 +1329,6 @@ textarea {
     font-size: 20px;
   }
   .btn-primary {
-    display: grid;
     padding-top: 5px;
     font-size: 14px;
     size: 10px;
@@ -1668,7 +1668,6 @@ textarea {
     font-size: 20px;
   }
   .btn-primary {
-    display: grid;
     padding-top: 5px;
     font-size: 14px;
     size: 10px;
