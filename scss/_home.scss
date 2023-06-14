@@ -61,21 +61,12 @@
     background-color: rgb(188, 201, 206);
     color: #000000;
     margin-top: 60px;
-    
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.tituloCajas {
-    padding: 20px 20px 0px 80px;
-}
-
-.tituloCajas2 {
-    padding: 20px 8px 0px 110px; 
-}
-
-.tituloCajas3 {
-    padding: 20px 10px 0px 70px;
-}
 
 .contenidoCajas {
     padding: 30px 32px 20px 40px

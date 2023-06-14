@@ -140,19 +140,10 @@ footer {
   background-color: rgb(188, 201, 206);
   color: #000000;
   margin-top: 60px;
-  display: inline-block;
-}
-
-.tituloCajas {
-  padding: 20px 20px 0px 80px;
-}
-
-.tituloCajas2 {
-  padding: 20px 8px 0px 110px;
-}
-
-.tituloCajas3 {
-  padding: 20px 10px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenidoCajas {
@@ -791,8 +782,6 @@ textarea {
     background-color: rgb(255, 251, 251);
   }
 }
-
-
 /***** MQ - Mobile ******/
 @media (max-width: 768px) {
   header {
@@ -858,11 +847,9 @@ textarea {
     background-color: rgb(221, 221, 221);
   }
   .props {
-    width: 380px;
-    height: 260px;
     background-color: rgb(188, 201, 206);
     color: #000000;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .tituloCajas {
     padding: 25px 15px 0px 110px;
