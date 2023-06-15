@@ -1,75 +1,29 @@
-
-.container-fluid2 {
-    height: 450px;
-    background-color: rgb(29, 28, 28);
- 
+.gap{
+    gap: 5px;
 }
-
-.w-100{
-    width: 100vw;
-}
-
 .props2 {
-    width: 300px;
-    height: 350px;
     background-color: rgb(188, 201, 206);
     color: #000000;
-    margin-top: 60px; 
-    margin-left: 40px;
-    margin-bottom: 160px;
-    margin-right: 40px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 100%;
+
 }
 
-.tituloCajaA {
-    padding: 25px 15px 0px 20px;
-}
-
-.tituloCajaB {
-    padding: 25px 8px 0px 20px;
-    
-}
-
-.tituloCajaC {
-    padding: 25px 10px 0px 20px;
-}
 
 .conteinerServicios1{
-    height: 400px;
     background-color: rgb(188, 201, 206);
 }
 
 .conteinerServicios2{
-    height: 400px;
     background-color: rgb(29, 28, 28);
     color: #fff;
 }
 
 
-.containerTituloParrafo {
-    height: 355px;
-    padding-top: 120px;
-    
-}
-
-.containerImagen1 {
-    padding-top: 25px;
-    padding-left: 120px;
-
-}
-
-.containerImagen2 {
-    padding-top: 25px;
-    padding-left: 0px;
-    padding-right: 180px;
-}
-
-.contenidoCajas {
-    padding: 30px 32px 20px 40px
-}
-
 .btn-primary {
     color: #fff  
 }
-
 

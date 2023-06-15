@@ -1,37 +1,16 @@
 header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 55px;
-    background-color: rgb(29, 28, 28);
-    
-   
-    nav {
-      ul {
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: auto;
-          height: 100%;
-          margin: 0 10px;
-          float: left;
-          
-          a {
-            text-decoration: none;
-            color: rgb(188, 201, 206)
-          }
-        }
+  background-color: rgb(29, 28, 28);
+
+.navbar-collapse{
+  ul{
+    li{
+      a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: rgb(188, 201, 206)
       }
     }
   }
-  
-  ul {
-    list-style-type: none;
-    font-family: "Lato-Regular";
-  }
+}
+      
+}

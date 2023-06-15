@@ -20,50 +20,71 @@
 <body>
 <!-- NavBar Flexbox -->
 <header>
-    <img src="../assets/imagenes/logo2.png" alt="logo circulos de colores">
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a> </li>
-            <li><a href="../paginas/nosotros.html">Nosotros</a></li> 
-            <li><a href="../paginas/portfolio.html">Portfolio</a></li>   
-            <li><a href="../paginas/servicios.html">Servicios</a></li>
-            <li><a href="../paginas/contacto.html">Contacto</a></li>   
-        </ul>
-      </nav>
-</header>
+    
+    <nav class="navbar navbar-dark p-4 navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/imagenes/logo2.png" alt="logo circulos de colores"></a>
+          <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span
+                  class="visually-hidden">Toggle navigation</span><span
+                  class="navbar-toggler-icon"></span></button>
+          <div class="navbar-collapse collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mt-4 text-center">
+                  <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  </header>
 
 <main>
-    <!--Titulo H2 de La Pagina -->
-  <h2 class="titulo">Nosotros</h2>
+    <section class="container-fluid">
 
-  <!--Flexbox - Box Modeling-->
- <div class="cajaNosotros">
-     <p class="contenidoCajaNosotros">
-         <strong>Cs Digital</strong> se enfoca en brindar servicios de desarrollo de IT a 
-         clientes de todo el mundo. Ayudamos a los clientes con la tecnología alrededor de su negocio. 
-         Nuestros servicios y experiencia cubren una amplia gama de opciones que necesitan las empresas 
-         modernas, que van desde el desarrollo y diseño de sitios web hasta la creación de 
-         marcas y el marketing digital, lo que nos permite conectar personas, generar confianza 
-         y optimizar los negocios. Cumplir con sus expectativas está en nuestro ADN. 
-     </p>
- </div>
+    <section>
+        <div class="row">
+            <h2 class="titulo">Nosotros</h2>
+            <div class="col cajaNosotros">
+                <p class="contenidoCajaNosotros p-5">
+                    <strong>Cs Digital</strong> se enfoca en brindar servicios de desarrollo de IT a 
+                    clientes de todo el mundo. Ayudamos a los clientes con la tecnología alrededor de su negocio. 
+                    Nuestros servicios y experiencia cubren una amplia gama de opciones que necesitan las empresas 
+                    modernas, que van desde el desarrollo y diseño de sitios web hasta la creación de 
+                    marcas y el marketing digital, lo que nos permite conectar personas, generar confianza 
+                    y optimizar los negocios. Cumplir con sus expectativas está en nuestro ADN. 
+                </p>
+            </div>
+        </div>
+    </section>
+       
+
+
+      <section class="contenido-principal">
+        <div class="row contenido p-3 gap-4 gap-md-0 d-flex align-items-center justify-content-center row-cols-1 row-cols-md-2">
+            <div class="col">
+                    <p class="fs-4 text-white">
+                        Trabajamos junto a un equipo interdisciplinario, donde cada uno aporta sus conocimientos y experiencia, poniendo en
+                        práctica las habilidades desarrolladas a travez del tiempo para lograr un diseño inigualable y eficiente.
+                        Nuestro objetivo es lograr el mejor resultado posible y generar satisfaccion en nuetsros clientes.
+                        Plasmar las ideas y creatividad en cada proyecto es nuestros sello distintivo.
+                    </p>  
+            </div>
+    
+            <div class="col d-flex justify-content-center ">
+        
+                <img src="../assets/imagenes/como-trabajar-en-informatica-encontrar-trabajo-en-it.jpg" alt="mujer y 
+                 hombre trabajando en informatica" class="img-fluid">
+
+            </div>
+            
+        </div>
+
+      </section>
+
+    </section>
  
- 
- <div class="cajaNosotros2">
-     <div class="bordeComun2">
-         <p class="contenidoCajaNosotros2">
-             Trabajamos junto a un equipo interdisciplinario, donde cada uno aporta sus conocimientos y experiencia, poniendo en
-             práctica las habilidades desarrolladas a travez del tiempo para lograr un diseño inigualable y eficiente.
-             Nuestro objetivo es lograr el mejor resultado posible y generar satisfaccion en nuetsros clientes.
-             Plasmar las ideas y creatividad en cada proyecto es nuestros sello distintivo.
-             
-         </p>  
-     </div>
-     <div class="imagenDerecha">
-         <img src="../assets/imagenes/como-trabajar-en-informatica-encontrar-trabajo-en-it.jpg" alt="mujer y 
-         hombre trabajando en informatica">
-     </div>
- </div>
 
 </main>
 

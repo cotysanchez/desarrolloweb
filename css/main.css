@@ -1,7 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 @font-face {
@@ -32,84 +37,64 @@
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 55px;
   background-color: rgb(29, 28, 28);
 }
-header nav ul {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-header nav ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: 100%;
-  margin: 0 10px;
-  float: left;
-}
-header nav ul li a {
+header .navbar-collapse ul li a {
+  font-size: 1.3rem;
   text-decoration: none;
   color: rgb(188, 201, 206);
 }
 
-ul {
-  list-style-type: none;
-  font-family: "Lato-Regular";
-}
-
 footer {
   background-color: rgb(29, 28, 28);
-  padding: 10px;
-  padding-left: 50px;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footerCopyright {
   font-family: "Lato-Regular";
   font-size: 12px;
   color: rgb(238, 222, 255);
-  padding-left: 500px;
 }
 
 .titulo {
-  margin: 40px;
-  padding-top: 20px;
+  padding: 2rem;
   text-align: center;
 }
 
 .tituloH1 {
   color: rgb(255, 255, 255);
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
   z-index: 5;
-  top: 260px;
-  left: 50px;
   animation-name: move;
   animation-duration: 4s;
   animation-delay: 1s;
-  animation-iteration-count: 2;
-  animation-direction: normal;
-  animation-fill-mode: backwards;
 }
 
 @keyframes move {
   0% {
-    translate: 100%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-.container-fluid {
+.better {
   --bs-gutter-x: 0;
+  position: relative;
 }
 
 #grilla {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 450px 450px 320px;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "content1    content1   content1" "content2    content2   content2" "content3    content3   content3";
   gap: 10px;
 }
@@ -123,10 +108,21 @@ footer {
 }
 
 #content2 {
-  display: grid;
   grid-area: content2;
-  grid-template-columns: 1fr 1fr;
   background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 576px) and (max-width: 768px) {
+  #content2 {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #content2 {
+    flex-direction: row;
+  }
 }
 
 #content3 {
@@ -135,32 +131,32 @@ footer {
 }
 
 .props {
-  width: 360px;
-  height: 320px;
+  height: 100%;
+  padding: 1.3rem;
   background-color: rgb(188, 201, 206);
   color: #000000;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .contenidoCajas {
-  padding: 30px 32px 20px 40px;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 576px) and (max-width: 768px) {
+  .contenidoCajas {
+    font-size: 1.8rem;
+  }
 }
 
-.bordeComun {
-  width: 540px;
-  height: 315px;
-  margin-top: 79px;
-  margin-left: 75px;
-  padding-top: 25px;
-  padding-left: 40px;
-  border-color: rgb(29, 28, 28);
-  border-style: hidden;
-  align-self: center;
-  justify-self: center;
+.contenidoCajaLista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contenidoCajaLista li {
+  font-size: 1.3rem;
 }
 
 .tituloSoluciones {
@@ -171,70 +167,35 @@ footer {
 }
 
 .contenidoCajaLista {
-  padding: 10px 32px 25px 30px;
-  color: #fff;
-}
-
-.videoInicio {
-  margin-top: 40px;
-  align-self: center;
-  justify-self: center;
+  color: #000000;
 }
 
 .cajaNosotros {
-  width: 100%;
-  height: 300px;
+  padding: 2.5rem;
   background-color: rgb(188, 201, 206);
-  margin-bottom: 50px;
 }
 
 .contenidoCajaNosotros {
-  padding: 95px 40px 30px 40px;
   font-size: 20px;
 }
 
-.cajaNosotros {
+.video {
+  padding: 1rem;
+}
+.video iframe {
   width: 100%;
-  height: 300px;
-  background-color: rgb(188, 201, 206);
-  margin-bottom: 50px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.cajaNosotros2 {
-  display: flex;
-  padding: 6rem;
-  margin-bottom: 10px;
-  justify-content: space-between;
+.contenido-principal .row {
   background-color: rgb(29, 28, 28);
 }
-
-.bordeComun2 {
-  width: 432px;
-  height: 386px;
-  padding: 10px;
-  border-color: #fff;
-  border-style: groove;
-  display: flex;
-  align-items: center;
-}
-
-.contenidoCajaNosotros {
-  padding: 95px 40px 30px 40px;
-  font-size: 20px;
-}
-
-.contenidoCajaNosotros2 {
-  padding: 10px;
-  font-size: 18px;
-  vertical-align: middle;
-  text-align: center;
-  color: #fff;
-}
-
-.imagenDerecha {
-  width: 432px;
-  height: 386px;
-  display: inline-block;
+@media screen and (max-width: 576px) and (max-width: 768px) {
+  .contenido-principal .row .col img {
+    width: 100%;
+  }
 }
 
 .containerGrid {
@@ -260,408 +221,104 @@ footer {
   transform: scale(1.1);
 }
 
-.container-fluid2 {
-  height: 450px;
-  background-color: rgb(29, 28, 28);
-}
-
-.w-100 {
-  width: 100vw;
+.gap {
+  gap: 5px;
 }
 
 .props2 {
-  width: 300px;
-  height: 350px;
   background-color: rgb(188, 201, 206);
   color: #000000;
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-bottom: 160px;
-  margin-right: 40px;
-  display: inline-block;
-}
-
-.tituloCajaA {
-  padding: 25px 15px 0px 20px;
-}
-
-.tituloCajaB {
-  padding: 25px 8px 0px 20px;
-}
-
-.tituloCajaC {
-  padding: 25px 10px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100%;
 }
 
 .conteinerServicios1 {
-  height: 400px;
   background-color: rgb(188, 201, 206);
 }
 
 .conteinerServicios2 {
-  height: 400px;
   background-color: rgb(29, 28, 28);
   color: #fff;
-}
-
-.containerTituloParrafo {
-  height: 355px;
-  padding-top: 120px;
-}
-
-.containerImagen1 {
-  padding-top: 25px;
-  padding-left: 120px;
-}
-
-.containerImagen2 {
-  padding-top: 25px;
-  padding-left: 0px;
-  padding-right: 180px;
-}
-
-.contenidoCajas {
-  padding: 30px 32px 20px 40px;
 }
 
 .btn-primary {
   color: #fff;
 }
 
-label {
+.propFormulario {
+  color: #fff;
+}
+.propFormulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(29, 28, 28);
+}
+.propFormulario form label {
   font-family: "Lato-Regular";
   font-size: 18px;
+  text-align: center;
 }
-
-input {
+.propFormulario form input {
   font-family: "Lato-Regular";
   font-size: 18px;
   margin: 5px;
 }
-
-textarea {
+.propFormulario form textarea {
   font-family: "Lato-Regular";
   font-size: 18px;
 }
-
-.propFormulario {
-  display: inline-block;
-  width: 520px;
-  height: 365px;
-  background-color: rgb(29, 28, 28);
-  color: #fff;
-  margin-left: 45px;
-  margin-bottom: 40px;
-  margin-right: 50px;
-}
-
-.contenidoCajaFormulario {
-  padding: 15px;
-  width: auto;
-  height: 520px;
-}
-
-.input-text {
+.propFormulario form .input-text {
   font-size: 17px;
-  width: 70%;
+  width: 100%;
   border: none;
-  padding: 10px;
+  padding: 1.5rem;
   border-radius: 10px;
   height: 25px;
-  margin: 10px;
 }
-
-.label {
-  padding: 12px;
-  font-size: 18px;
-}
-
-.campo label {
+.propFormulario form .btn-primary {
   color: #fff;
-  font-weight: 16px;
-  display: inline-block;
-  font-size: 18px;
-  text-align: center;
-}
-
-.text-area {
-  padding: 15px;
-  border-radius: 10px;
-  width: 450px;
-}
-
-.btn-primary {
-  color: #fff;
-}
-
-.container-fluid-contacto {
-  background-color: rgb(198, 198, 233);
-  height: 560px;
-  padding-left: 40px;
-  padding-top: 15px;
-}
-
-.rowContacto {
-  height: 365px;
-  display: flex;
-  padding-top: 90px;
 }
 
 .colContactanos {
-  display: inline-block;
-  width: 520px;
-  height: 365px;
+  padding: 2rem;
   background-color: rgb(233, 233, 233);
-  padding-top: 50px;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
 }
-
-.parrafoContactanos {
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 25px;
+.colContactanos p {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 576px) and (max-width: 768px) {
+  .colContactanos p {
+    font-size: 1.6rem;
+  }
 }
 
 .iconosRedesSociales {
-  display: inline-flex;
-  border-radius: 50%;
-  background-color: rgb(36, 36, 39);
-  width: 40px;
-  min-height: 40px;
+  display: flex;
+  gap: 1.7rem;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  position: relative;
 }
-
-.iconosRedesSocialesHover:hover {
-  text-decoration: none;
+.iconosRedesSociales a {
   color: rgb(2, 2, 2);
-  background-color: rgb(255, 251, 251);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.iconosRedesSociales a:hover {
+  color: rgb(69, 68, 68);
+  transform: scale(1.2);
 }
 
 /******* MQ- Tablet ********/
 @media (max-width: 1024px) {
-  header {
-    flex-direction: row;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(29, 28, 28);
-    padding-top: 10px;
-    font-size: 13px;
-  }
-  header nav ul {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-  header nav ul li {
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 100%;
-    margin: 0 10px;
-    float: left;
-  }
-  .titulo {
-    margin: 20px;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 20px;
-  }
-  .tituloH1 {
-    font-size: 25px;
-    top: 100px;
-    left: 30px;
-  }
-  #grilla {
-    width: 100%;
-    background-color: rgb(221, 221, 221);
-    grid-template-columns: 100%;
-    grid-template-rows: 3fr 2fr 1fr;
-    grid-template-areas: "content1" "content2" "content3";
-    gap: 5px;
-  }
-  #content1 {
-    grid-area: content1;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: rgb(221, 221, 221);
-    align-items: center;
-  }
-  #content2 {
-    grid-area: content2;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: rgb(29, 28, 28);
-  }
-  #content3 {
-    grid-area: content3;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: rgb(221, 221, 221);
-  }
-  .props {
-    width: 270px;
-    height: 320px;
-    background-color: rgb(188, 201, 206);
-    color: #000000;
-    margin-top: 5px;
-    margin-left: 15px;
-  }
-  .tituloCajas {
-    padding: 25px 15px 0px 55px;
-    font-size: 23px;
-  }
-  .tituloCajas2 {
-    padding: 25px 8px 0px 75px;
-    font-size: 23px;
-  }
-  .tituloCajas3 {
-    padding: 25px 10px 0px 50px;
-    font-size: 23px;
-  }
-  .contenidoCajas {
-    padding: 25px 32px 20px 40px;
-    font-size: 14px;
-  }
-  .tituloSoluciones {
-    padding-top: 3px;
-    padding-left: 110px;
-    padding-bottom: 15px;
-    font-size: 20px;
-  }
-  .contenidoCajaLista {
-    padding: 5px 25px 25px 10px;
-    font-size: 14px;
-  }
-  .bordeComun {
-    width: 85%;
-    height: 280px;
-    margin-top: 33px;
-    margin-left: 35px;
-    padding-top: 15px;
-    padding-left: 190px;
-    border-color: rgb(29, 28, 28);
-    border-style: hidden;
-  }
-  .videoInicio {
-    width: 85%;
-    height: 300px;
-    margin-top: 15px;
-  }
-  .cajaNosotros {
-    width: 100%;
-    height: 250px;
-    background-color: rgb(188, 201, 206);
-  }
-  .contenidoCajaNosotros {
-    padding: 50px 40px 10px 40px;
-    font-size: 14px;
-    justify-content: center;
-    align-content: center;
-  }
-  footer {
-    background-color: rgb(29, 28, 28);
-    padding-top: 20px;
-    padding-left: 260px;
-  }
-  .footerCopyright {
-    font-family: "Lato-Regular";
-    font-size: 12px;
-    color: rgb(238, 222, 255);
-    padding-left: 25px;
-  }
-  /******* Pagina Nosotros *******/
-  .cajaNosotros2 {
-    display: block;
-    margin-bottom: 5px;
-    justify-content: space-between;
-    background-color: rgb(29, 28, 28);
-  }
-  .bordeComun2 {
-    width: 440px;
-    height: 385px;
-    padding: 10px;
-    border-color: #fff;
-    border-style: groove;
-    align-items: center;
-  }
-  .contenidoCajaNosotros2 {
-    padding: 15px;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-  }
-  .imagenDerecha {
-    width: 432px;
-    height: 386px;
-  }
-  /******* Pagina Servicios *******/
-  .container-fluid2 {
-    height: 650px;
-    background-color: rgb(7, 7, 7);
-    --bs-gutter-x: 0;
-  }
-  .props2 {
-    width: 300px;
-    height: 300px;
-    display: grid;
-    background-color: rgb(188, 201, 206);
-    color: #000000;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    text-align: justify;
-  }
-  .tituloCajaA {
-    padding: 25px 15px 0px 50px;
-    font-size: 20px;
-  }
-  .tituloCajaB {
-    padding: 25px 8px 0px 60px;
-    font-size: 20px;
-  }
-  .tituloCajaC {
-    padding: 25px 10px 0px 40px;
-    font-size: 20px;
-  }
-  .btn-primary {
-    padding-top: 5px;
-    font-size: 14px;
-    size: 10px;
-  }
-  .conteinerServicios1 {
-    height: max-content;
-    background-color: rgb(188, 201, 206);
-    padding-bottom: 20px;
-  }
-  .conteinerServicios2 {
-    height: max-content;
-    padding-bottom: 20px;
-  }
-  .containerTituloParrafo {
-    padding-top: 120px;
-  }
-  .containerImagen1 {
-    margin: 0;
-    padding: 0;
-  }
-  .containerImagen1 img {
-    width: 100%;
-  }
-  .containerImagen2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .containerImagen2 img {
-    width: 100%;
-  }
   /******* Pagina Portfolio *******/
   .containerGrid {
     width: 98%;
@@ -683,320 +340,9 @@ textarea {
   .divPortfolio > img:hover {
     transform: scale(1.1);
   }
-  /******** Pagina Contacto ********/
-  .propFormulario {
-    width: 440px;
-    height: 320px;
-    background-color: rgb(29, 28, 28);
-    color: #fff;
-    margin-top: 19px;
-    margin-left: 11px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-  }
-  .contenidoCajaFormulario {
-    padding: 15px;
-    width: 400px;
-  }
-  .input-text {
-    font-size: 12px;
-    width: 74%;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    height: 25px;
-    margin: 5px;
-  }
-  .label {
-    padding: 12px;
-    font-size: 14px;
-    color: #fff;
-  }
-  .campo label {
-    color: #fff;
-    font-weight: 16px;
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
-  }
-  .text-area {
-    padding: 10px;
-    border-radius: 10px;
-    width: 380px;
-    font-size: 14px;
-    color: #fff;
-  }
-  .btn-primary {
-    display: grid;
-    padding-top: -10px;
-    font-size: 14px;
-    size: 15px;
-  }
-  .container-fluid-contacto {
-    height: 780px;
-    background-color: rgb(200, 200, 252);
-    padding-left: 3px;
-    padding-right: 15px;
-    padding-top: 30px;
-  }
-  h3 {
-    font-family: "PlayfairDisplay";
-    font-size: 25px;
-  }
-  .rowContacto {
-    height: 365px;
-    display: inline;
-    padding-top: 5px;
-  }
-  .colContactanos {
-    width: 440px;
-    height: 300px;
-    background-color: rgb(233, 233, 233);
-    padding-top: 50px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .parrafoContactanos {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    font-size: 14px;
-  }
-  .iconosRedesSociales {
-    border-radius: 50%;
-    background-color: rgb(36, 36, 39);
-    width: 40px;
-    min-height: 40px;
-    margin-bottom: 25px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    position: relative;
-  }
-  .iconosRedesSocialesHover:hover {
-    text-decoration: none;
-    color: rgb(2, 2, 2);
-    background-color: rgb(255, 251, 251);
-  }
 }
 /***** MQ - Mobile ******/
 @media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(29, 28, 28);
-    padding-top: 10px;
-    font-size: 13px;
-  }
-  header nav ul {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-  header nav ul li {
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 100%;
-    margin: 0 10px;
-    float: left;
-  }
-  .titulo {
-    margin: 20px;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 20px;
-  }
-  .tituloH1 {
-    font-size: 20px;
-    top: 100px;
-    left: 30px;
-  }
-  #grilla {
-    width: 100%;
-    background-color: rgb(221, 221, 221);
-    grid-template-columns: 100%;
-    grid-template-rows: 3fr 2fr 1fr;
-    grid-template-areas: "content1" "content2" "content3";
-    gap: 10px;
-  }
-  #content1 {
-    height: 920px;
-    grid-area: content1;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: rgb(221, 221, 221);
-    align-items: center;
-  }
-  #content2 {
-    height: 700px;
-    grid-area: content2;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: rgb(29, 28, 28);
-  }
-  #content3 {
-    height: 300px;
-    grid-area: content3;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: rgb(221, 221, 221);
-  }
-  .props {
-    background-color: rgb(188, 201, 206);
-    color: #000000;
-    margin-top: 20px;
-  }
-  .tituloCajas {
-    font-size: 23px;
-  }
-  .tituloCajas2 {
-    font-size: 23px;
-  }
-  .tituloCajas3 {
-    font-size: 23px;
-  }
-  .contenidoCajas {
-    padding: 25px 32px 20px 40px;
-    font-size: 14px;
-  }
-  .tituloSoluciones {
-    padding-top: 5px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    font-size: 18px;
-  }
-  .contenidoCajaLista {
-    padding: 5px 15px 25px 10px;
-    font-size: 14px;
-  }
-  .bordeComun {
-    width: 85%;
-    height: 280px;
-    margin-top: 33px;
-    margin-left: 32px;
-    padding-top: 15px;
-    padding-left: 30px;
-    border-color: rgb(29, 28, 28);
-    border-style: hidden;
-  }
-  .videoInicio {
-    width: 85%;
-    height: 300px;
-    margin-top: 15px;
-    overflow: auto;
-  }
-  .cajaNosotros {
-    width: 100%;
-    height: 300px;
-    background-color: rgb(188, 201, 206);
-  }
-  .contenidoCajaNosotros {
-    padding: 50px 40px 10px 40px;
-    font-size: 14px;
-    justify-content: center;
-    align-content: center;
-  }
-  footer {
-    background-color: rgb(29, 28, 28);
-    padding-top: 20px;
-    padding-left: 50px;
-  }
-  .footerCopyright {
-    font-family: "Lato-Regular";
-    font-size: 12px;
-    color: rgb(238, 222, 255);
-    padding-left: 25px;
-  }
-  /******* Pagina Nosotros *******/
-  .cajaNosotros2 {
-    display: block;
-    margin-bottom: 5px;
-    justify-content: space-between;
-    background-color: rgb(29, 28, 28);
-  }
-  .bordeComun2 {
-    width: 432px;
-    height: 320px;
-    padding: 10px;
-    border-color: #fff;
-    border-style: groove;
-    align-items: center;
-  }
-  .contenidoCajaNosotros2 {
-    padding: 15px;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-  }
-  .imagenDerecha {
-    width: 432px;
-    height: 386px;
-  }
-  /******* Pagina Servicios *******/
-  .container-fluid2 {
-    height: 1100px;
-    background-color: rgb(7, 7, 7);
-    --bs-gutter-x: 0;
-  }
-  .props2 {
-    width: 300px;
-    height: 280px;
-    background-color: rgb(188, 201, 206);
-    color: #000000;
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-bottom: 20px;
-    margin-right: 40px;
-    text-align: justify;
-  }
-  .tituloCajaA {
-    padding: 25px 15px 0px 150px;
-    font-size: 25px;
-  }
-  .tituloCajaB {
-    padding: 25px 8px 0px 170px;
-    font-size: 25px;
-  }
-  .tituloCajaC {
-    padding: 25px 10px 0px 140px;
-    font-size: 25px;
-  }
-  .btn-primary {
-    padding-top: -10px;
-    font-size: 14px;
-    size: 20px;
-  }
-  .conteinerServicios1 {
-    height: max-content;
-    background-color: rgb(188, 201, 206);
-    padding-bottom: 20px;
-  }
-  .conteinerServicios2 {
-    height: max-content;
-    padding-bottom: 20px;
-  }
-  .containerTituloParrafo {
-    padding-top: 120px;
-  }
-  .containerImagen1 {
-    margin: 0;
-    padding: 0;
-  }
-  .containerImagen1 img {
-    width: 100%;
-  }
-  .containerImagen2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .containerImagen2 img {
-    width: 100%;
-  }
   /******* Pagina Portfolio *******/
   .containerGrid {
     width: 90%;
@@ -1017,102 +363,6 @@ textarea {
   }
   .divPortfolio > img:hover {
     transform: scale(1.1);
-  }
-  /******** Pagina Contacto ********/
-  .propFormulario {
-    width: 440px;
-    height: 320px;
-    background-color: rgb(29, 28, 28);
-    color: #fff;
-    margin-top: 19px;
-    margin-left: 11px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-  }
-  .contenidoCajaFormulario {
-    padding: 15px;
-    width: 400px;
-  }
-  .input-text {
-    font-size: 12px;
-    width: 74%;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    height: 25px;
-    margin: 5px;
-  }
-  .label {
-    padding: 12px;
-    font-size: 14px;
-    color: #fff;
-  }
-  .campo label {
-    color: #fff;
-    font-weight: 16px;
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
-  }
-  .text-area {
-    padding: 10px;
-    border-radius: 10px;
-    width: 380px;
-    font-size: 14px;
-    color: #fff;
-  }
-  .btn-primary {
-    display: grid;
-    padding-top: -10px;
-    font-size: 14px;
-    size: 15px;
-  }
-  .container-fluid-contacto {
-    height: 780px;
-    background-color: rgb(200, 200, 252);
-    padding-left: 3px;
-    padding-right: 15px;
-    padding-top: 30px;
-  }
-  h3 {
-    font-family: "PlayfairDisplay";
-    font-size: 25px;
-  }
-  .rowContacto {
-    height: 365px;
-    display: inline;
-    padding-top: 5px;
-  }
-  .colContactanos {
-    width: 440px;
-    height: 300px;
-    background-color: rgb(233, 233, 233);
-    padding-top: 50px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .parrafoContactanos {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    font-size: 14px;
-  }
-  .iconosRedesSociales {
-    border-radius: 50%;
-    background-color: rgb(36, 36, 39);
-    width: 40px;
-    min-height: 40px;
-    margin-bottom: 25px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    position: relative;
-  }
-  .iconosRedesSocialesHover:hover {
-    text-decoration: none;
-    color: rgb(2, 2, 2);
-    background-color: rgb(255, 251, 251);
   }
 }
 

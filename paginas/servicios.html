@@ -20,100 +20,121 @@
 <body>
   <!-- NavBar Flexbox -->
   <header>
-    <img src="../assets/imagenes/logo2.png" alt="logo circulos de colores">
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a> </li>
-        <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-        <li><a href="../paginas/portfolio.html">Portfolio</a></li>
-        <li><a href="../paginas/servicios.html">Servicios</a></li>
-        <li><a href="../paginas/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
+    
+    <nav class="navbar navbar-dark p-4 navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/imagenes/logo2.png" alt="logo circulos de colores"></a>
+          <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span
+                  class="visually-hidden">Toggle navigation</span><span
+                  class="navbar-toggler-icon"></span></button>
+          <div class="navbar-collapse collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mt-4 text-center">
+                  <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
   </header>
+  
   <main>
-    <!-- Titulo H2 de la Pagina-->
-    <h2 class="titulo">Servicios</h2>
+  
+   
+<section class="container-fluid">
 
-    <!-- Bootstrap -->
-    <div class="container-fluid2 text-center">
-      <div class="row w-100">
-        <div class="col props2">
-          <h3 class="tituloCajaA">Desarrollo Web</h3>
-          <p class="contenidoCajas">
-            proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes
-            lenguajes de programación, según el modelo y la parte de la página que corresponda.
-            Cada sitio tiene una URL única que lo distingue de los demás en la red
-          </p>
-          <!--Boton Ver Mas con Bootstrap -->
-          <a class="btn btn-primary" href="../index.html" role="button">Ver Más</a>
+  <h2 class="titulo">Servicios</h2>
+  
+    <section>
+      <div class="row conteinerServicios2 p-4 d-flex row-gap-2 justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+        <div class="col">
+          <div class="props2">
+            <h3 class="tituloCajas">Desarrollo Web</h3>
+            <p class="contenidoCajas">
+             Proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes 
+             lenguajes de programación, según el modelo y la parte de la página que corresponda. 
+             Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial
+            </p>
+            <a class="btn btn-primary align-self-center p-3" href="../index.html" role="button">Ver Más</a>
+           </div>
         </div>
-        <div class="col props2">
-          <h3 class="tituloCajaB">Diseño Web</h3>
-          <p class="contenidoCajas">
-            Implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido,
-            aunque generalmente se aplica a la creación de sitios web.
-            En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado
-          </p>
-
-          <!--Boton Ver Más con Bootstrap -->
-          <a class="btn btn-primary" href="../index.html" role="button">Ver Más</a>
+        <div class="col">
+          <div class="props2">
+            <h3 class="tituloCajas2">Diseño Web</h3>
+             <p class="contenidoCajas">
+              Implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, 
+             aunque generalmente se aplica a la creación de sitios web.
+             En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML
+             </p> 
+             <a class="btn btn-primary align-self-center p-3" href="../index.html" role="button">Ver Más</a>
+          </div>
         </div>
-        <div class="col props2">
-          <h3 class="tituloCajaC">Marketing Digital</h3>
-          <p class="contenidoCajas">
-            También llamado marketing en línea, es la promoción de las marcas para
-            conectar con posibles clientes usando internet y otras formas de comunicación digital.
-            Implementando diferentes estrategias en el marco digital
-          </p>
-          <!--Boton Ver Mas con Bootstrap -->
-          <a class="btn btn-primary" href="../index.html" role="button">Ver Más</a>
+        <div class="col">
+          <div class="props2">
+            <h3 class="tituloCajas3">Marketing Digital</h3>
+             <p class="contenidoCajas">
+              También llamado marketing en línea, es la promoción de las marcas para 
+              conectar con posibles clientes usando internet y otras formas de comunicación digital.
+              Implementando diferentes estrategias en el marco digital
+             </p>
+             <a class="btn btn-primary align-self-center p-3" href="../index.html" role="button">Ver Más</a>
+          </div>
+  
         </div>
       </div>
-    </div>
 
-
-    <section class="container-fluid px-4 conteinerServicios1">
-      <div class="container text-center">
-        <div class="row d.flex flex-column flex-md-row">
-          <div class="col col-md-4 containerTituloParrafo">
-            <h3>Desarrollo Web</h3>
-            <p>Desarrollamos tu web aplicando diferentes lenguajes de programación</p>
-          </div>
-          <div class="col col-md-8 containerImagen1">
-            <img src="../assets/imagenes/lenguaje de programacion1.jpg" alt="persona programando">
-          </div>
-        </div>
     </section>
 
-    <section class="container-fluid px-4 conteinerServicios2">
-      <div class="text-center">
-        <div class="row d.flex flex-column-reverse flex-md-row">
-          <div class="col col-md-8 text-center containerImagen2">
-            <img src="../assets/imagenes/lenguaje de programacion2.jpg" alt="lenguaje de programacion">
-          </div>
-          <div class="col col-md-4 containerTituloParrafo">
-            <h3>Diseño Web</h3>
-            <p>Diseñamos tu sitio web responsive apto para todo dispositivo con las ultimas tendencias</p>
-          </div>
-        </div>
-    </section>
 
-    <section class="container-fluid px-4 conteinerServicios1">
-      <div class="text-center">
-        <div class="row d.flex flex-column flex-md-row">
-          <div class="col col-md-4 containerTituloParrafo">
-            <h3>Marketing Digital</h3>
-            <p>Aplicamos diferntes etsrategias de Marketing Digital para que puedas lograr alcance con tu marca</p>
-          </div>
-          <div class="col col-md-8 containerImagen1">
-            <img src="../assets/imagenes/lenguaje de programacion3.jpg" alt="marketing digital">
-          </div>
+  <section>
+    
+      <div class="row row-gap-2 conteinerServicios1 d.flex p-3 justify-content-between align-items-center flex-column-reverse flex-md-row">
+        <div class="col col-md-5">
+          <h3>Desarrollo Web</h3>
+          <p class="fs-4">Desarrollamos tu web aplicando diferentes lenguajes de programación</p>
         </div>
-    </section>
+        <div class="col col-md-7 text-center">
+          <img src="../assets/imagenes/lenguaje de programacion1.jpg" class="img-fluid" alt="persona programando">
+        </div>
+      </div>
+     
+  </section>
 
-  </main>
+ 
+
+  <section>
+    
+      <div class="row conteinerServicios2 row-gap-2  d.flex p-3 justify-content-between align-items-center flex-column-reverse flex-md-row">
+        <div class="col col-md-7 text-center">
+          <img src="../assets/imagenes/lenguaje de programacion2.jpg" class="img-fluid" alt="lenguaje de programacion">
+        </div>
+        <div class="col col-md-5">
+          <h3>Diseño Web</h3>
+          <p class="fs-4">Diseñamos tu sitio web responsive apto para todo dispositivo con las ultimas tendencias</p>
+        </div>
+      </div>
+      
+  </section>
+
+  <section>
+
+      <div class="row conteinerServicios1 row-gap-2 d.flex p-3 justify-content-between align-items-center flex-column-reverse flex-md-row">
+        <div class="col col-md-5">
+          <h3>Marketing Digital</h3>
+          <p class="fs-4">Aplicamos diferntes etsrategias de Marketing Digital para que puedas lograr alcance con tu marca</p>
+        </div>
+        <div class="col col-md-7 text-center">
+          <img src="../assets/imagenes/lenguaje de programacion3.jpg" class="img-fluid" alt="marketing digital">
+        </div>
+      </div>
+
+  </section>
+
+</section>
+   
+</main>
 
 
 

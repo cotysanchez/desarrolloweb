@@ -21,30 +21,34 @@
 <body>
 
  <!--Navbar Flexbox--> 
-<header>
- <img src="./assets/imagenes/logo2.png" alt="logo circulos de colores">
-   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="./paginas/nosotros.html">Nosotros</a></li> 
-      <li><a href="./paginas/portfolio.html">Portfolio</a></li>   
-      <li><a href="./paginas/servicios.html">Servicios</a></li>
-      <li><a href="./paginas/contacto.html">Contacto</a></li>   
-    </ul>
-   </nav>
-
+ <header>
+  <nav class="navbar navbar-dark p-4 navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/imagenes/logo2.png" alt="logo circulos de colores"></a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span
+                class="visually-hidden">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mt-4 text-center">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 </header>
 
 <main>
   <!--Bootstrap-->
   <!--Aca agregamos un section con la clase container fluid, un H1 y luego un carrousel de imágenes con 
     boton Prev y Next-->
- <section class="container-fluid">
-  <div>
-      <h1 class="tituloH1">Desarrollo Web</h1>
-  </div>
+ <section class="container-fluid better">
     
   <div id="carouselExample" class="carousel slide">
+    <h1 class="tituloH1">Desarrollo Web</h1>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/imagenes/portada 3 .jpg" class="d-block w-100" alt="imagen con fondo negro y neon azul">
@@ -70,77 +74,92 @@
 
 
 <!-- Grid - Flexbox - Box Modeling-->
-<div id="grilla">
-  <!--Grid seccion Content1-->
-  <section id="content1"> 
-    <div class="props">
-     <h3 class="tituloCajas">Desarrollo Web</h3>
-     <p class="contenidoCajas">
-      Proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes 
-      lenguajes de programación, según el modelo y la parte de la página que corresponda. 
-      Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial
-     </p>
-    </div>
-      
-    <div class="props">
-      <h3 class="tituloCajas2">Diseño Web</h3>
-       <p class="contenidoCajas">
-        Implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, 
-       aunque generalmente se aplica a la creación de sitios web.
-       En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML
-       </p> 
-    </div>
+<div class="container-fluid">
 
-    <div class="props">
-      <h3 class="tituloCajas3">Marketing Digital</h3>
-       <p class="contenidoCajas">
-        También llamado marketing en línea, es la promoción de las marcas para 
-        conectar con posibles clientes usando internet y otras formas de comunicación digital.
-        Implementando diferentes estrategias en el marco digital
-       </p>
+  <section>
+    <div class="row p-4 d-flex row-gap-2 justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+      <div class="col">
+        <div class="props">
+          <h3 class="tituloCajas">Desarrollo Web</h3>
+          <p class="contenidoCajas">
+           Proceso de crear y mantener un sitio web que sea funcional en internet, a través de diferentes 
+           lenguajes de programación, según el modelo y la parte de la página que corresponda. 
+           Cada sitio tiene una URL única que lo distingue de los demás en la red informática mundial
+          </p>
+         </div>
+      </div>
+      <div class="col">
+        <div class="props">
+          <h3 class="tituloCajas2">Diseño Web</h3>
+           <p class="contenidoCajas">
+            Implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, 
+           aunque generalmente se aplica a la creación de sitios web.
+           En este caso, los diseñadores web crean las páginas utilizando lenguajes de marcado como HTML
+           </p> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="props">
+          <h3 class="tituloCajas3">Marketing Digital</h3>
+           <p class="contenidoCajas">
+            También llamado marketing en línea, es la promoción de las marcas para 
+            conectar con posibles clientes usando internet y otras formas de comunicación digital.
+            Implementando diferentes estrategias en el marco digital
+           </p>
+        </div>
+      </div>
     </div>
   </section>
+  
 
  <!--Grid Seccion Content2-->
-  <section id="content2">
-    <div class="bordeComun">
-     <h2 class="tituloSoluciones">Soluciones de Sitios Web</h2>
-      <ul class="contenidoCajaLista">
-        <li>Diseño de experiencia de usuario UI / UX</li>
-        <li>Desarrollo de Sitios web adaptables a dispsitivos Moviles</li> 
-        <li>Estrategia de Contenido</li>
-        <li>Gestion y mantenimiento de sitios web</li>
-        <li>SEO</li>
-        <li>Diseño Web</li>
-        <li>Comercio electrónico</li>  
-        <li>WordPress</li>
+ <section>
+
+    <div class="row row-cols-1 row-cols-lg-2 bg-black p-5">
+      <div class="col col-lg-4 p-4 d-flex flex-column align-items-center">
+
+        <h2 class="tituloSoluciones">Soluciones de Sitios Web</h2>
+        <ul class="contenidoCajaLista text-center text-lg-start text-white">
+          <li>Diseño de experiencia de usuario UI / UX</li>
+          <li>Desarrollo de Sitios web adaptables a dispsitivos Moviles</li> 
+          <li>Estrategia de Contenido</li>
+          <li>Gestion y mantenimiento de sitios web</li>
+          <li>SEO</li>
+          <li>Diseño Web</li>
+          <li>Comercio electrónico</li>  
+          <li>WordPress</li>
      </ul>
-    </div> 
-  
-    
-    <div class="videoInicio">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/upbjHe-hWGs" title="YouTube video player" 
+
+      </div>
+      <div class="col col-lg-8 p-4 video">
+
+        <iframe  src="https://www.youtube.com/embed/upbjHe-hWGs" title="YouTube video player" 
        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
        picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </section>
 
-  <!-- Grid Seccion Content3-->
- <section id="content3">
-    <div class="cajaNosotros">
-      <p class="contenidoCajaNosotros">
-          <strong>Cs Digital</strong> se enfoca en brindar servicios de desarrollo de TI a 
-          clientes de todo el mundo. Ayudamos a los clientes con la tecnología alrededor de su negocio. 
-          Nuestros servicios y experiencia cubren una amplia gama de opciones que necesitan las empresas 
-          modernas, que van desde el desarrollo y diseño de sitios web hasta la creación de 
-          marcas y el marketing digital, lo que nos permite conectar personas, generar confianza 
-          y optimizar los negocios. Cumplir con sus expectativas está en nuestro ADN. 
-      </p>
-  </div>
+      </div>
+    </div>
+
  </section>
 
 
- 
+
+  <!-- Grid Seccion Content3-->
+<section>
+  <div class="row cajaNosotros">
+    <div class="col">
+      <p class="contenidoCajaNosotros p-5">
+        <strong>Cs Digital</strong> se enfoca en brindar servicios de desarrollo de TI a 
+        clientes de todo el mundo. Ayudamos a los clientes con la tecnología alrededor de su negocio. 
+        Nuestros servicios y experiencia cubren una amplia gama de opciones que necesitan las empresas 
+        modernas, que van desde el desarrollo y diseño de sitios web hasta la creación de 
+        marcas y el marketing digital, lo que nos permite conectar personas, generar confianza 
+        y optimizar los negocios. Cumplir con sus expectativas está en nuestro ADN. 
+    </p>
+    </div>
+  </div>
+ </section> 
+
 
 </div>
 </main>
