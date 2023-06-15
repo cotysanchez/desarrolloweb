@@ -90,15 +90,6 @@ footer {
   position: relative;
 }
 
-#grilla {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "content1    content1   content1" "content2    content2   content2" "content3    content3   content3";
-  gap: 10px;
-}
-
 .props {
   height: 100%;
   padding: 1.3rem;
@@ -266,7 +257,7 @@ footer {
 }
 @media screen and (max-width: 576px) and (max-width: 768px) {
   .colContactanos p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 

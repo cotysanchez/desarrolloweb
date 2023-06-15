@@ -24,19 +24,6 @@
     position: relative;
 }
 
-#grilla {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
-
-    grid-template-areas:
-    "content1    content1   content1"
-    "content2    content2   content2"
-    "content3    content3   content3";
-
-    gap: 10px;
-}
 
 .props {
     height: 100%;
