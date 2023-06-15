@@ -42,7 +42,7 @@
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
-        grid-template-rows:  410px 675px 240px;
+        grid-template-rows:  3fr 2fr 1fr;
         grid-template-areas:
         "content1"
         "content2"
@@ -128,8 +128,6 @@
     .videoInicio {
         width: 85%;
         height: 300px;
-        top: 1140px;
-        left: 165px;
         margin-top: 15px;
     }
 
@@ -454,7 +452,7 @@ h3 {
         width: 100%;
         background-color: rgb(221, 221, 221);
         grid-template-columns: 100%;
-        grid-template-rows:  920px 740px 310px;
+        grid-template-rows:  3fr 2fr 1fr;
         grid-template-areas:
         "content1"
         "content2"
@@ -537,8 +535,6 @@ h3 {
     .videoInicio {
         width: 85%;
         height: 300px;
-        top: 1500px;
-        left: 30px;
         margin-top: 15px;
         overflow:auto;
     }

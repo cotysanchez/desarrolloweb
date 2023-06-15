@@ -81,7 +81,9 @@
     padding-left: 40px;
     border-color:  rgb(29, 28, 28);
     border-style: hidden;
-    position: absolute;  
+    align-self: center;
+    justify-self: center;
+    
 }
 
 .tituloSoluciones {
@@ -98,10 +100,9 @@
 }
 
 .videoInicio {
-    position: absolute;
-    top: 1120px;
-    left: 740px;
     margin-top: 40px;
+    align-self: center;
+    justify-self: center;
 }
 
 .cajaNosotros {
