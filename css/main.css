@@ -99,37 +99,6 @@ footer {
   gap: 10px;
 }
 
-#content1 {
-  display: grid;
-  grid-area: content1;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(221, 221, 221);
-  justify-items: center;
-}
-
-#content2 {
-  grid-area: content2;
-  background-color: rgb(29, 28, 28);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-@media screen and (max-width: 576px) and (max-width: 768px) {
-  #content2 {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #content2 {
-    flex-direction: row;
-  }
-}
-
-#content3 {
-  display: grid;
-  grid-area: content3;
-}
-
 .props {
   height: 100%;
   padding: 1.3rem;
@@ -146,7 +115,7 @@ footer {
 }
 @media screen and (max-width: 576px) and (max-width: 768px) {
   .contenidoCajas {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -156,7 +125,7 @@ footer {
   gap: 1rem;
 }
 .contenidoCajaLista li {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .tituloSoluciones {
@@ -297,7 +266,7 @@ footer {
 }
 @media screen and (max-width: 576px) and (max-width: 768px) {
   .colContactanos p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
