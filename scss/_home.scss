@@ -38,33 +38,6 @@
     gap: 10px;
 }
 
-#content1 {
-    display: grid;
-    grid-area: content1;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgb(221, 221, 221);
-    justify-items: center;
-}
-
-#content2 {
-    grid-area: content2;
-    background-color: rgb(29, 28, 28);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @include mobile{
-        flex-direction: column;
-    }
-    @include desktop{
-        flex-direction: row;
-    }
-}
-
-#content3 {
-    display: grid;
-    grid-area: content3; 
-}
-
 .props {
     height: 100%;
     padding: 1.3rem;
@@ -81,7 +54,7 @@
     font-size:1.3rem;
 
     @include mobile{
-        font-size:1.8rem;
+        font-size:1.2rem;
     }
 }
 
@@ -90,23 +63,11 @@
     flex-direction: column;
     gap: 1rem;
     li{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
-// .bordeComun 
-//     width: 540px;
-//     height: 315px;
-//     margin-top: 79px;
-//     margin-left: 75px;
-//     padding-top: 25px;
-//     padding-left: 40px;
-//     border-color:  rgb(29, 28, 28);
 
-//     align-self: center;
-//     justify-self: center;
-    
-// }
 
 .tituloSoluciones {
     padding-top: 5px;
