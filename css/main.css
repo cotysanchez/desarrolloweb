@@ -102,11 +102,11 @@ footer {
 }
 
 .contenidoCajas {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 576px) and (max-width: 768px) {
   .contenidoCajas {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
