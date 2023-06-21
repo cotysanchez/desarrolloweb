@@ -36,6 +36,7 @@
     align-items: center;
 }
 
+
 .contenidoCajas{
    
     font-size:1.2rem;
@@ -44,6 +45,18 @@
         font-size:1.1rem;
     }
 }
+
+.btn-darkgrey {
+    width: 100%;
+    color: #fff;
+    background-color: rgb(29, 28, 28); 
+     
+}
+
+.bg-darkgrey {
+    background-color: rgb(29, 28, 28);  
+}
+
 
 .contenidoCajaLista{
     display: flex;
