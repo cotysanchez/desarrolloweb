@@ -115,6 +115,9 @@ footer {
   color: #fff;
   background-color: rgb(29, 28, 28);
 }
+.btn-darkgrey:hover {
+  background-color: rgb(78, 78, 78);
+}
 
 .bg-darkgrey {
   background-color: rgb(29, 28, 28);
