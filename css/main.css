@@ -110,6 +110,7 @@ footer {
 }
 
 .contenidoCajas {
+  text-align: center;
   font-size: 1.2rem;
 }
 @media screen and (max-width: 576px) and (max-width: 768px) {
@@ -125,8 +126,8 @@ footer {
 }
 .btn-darkgrey:hover {
   background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgb(29, 28, 28);
+  color: rgb(29, 28, 28);
 }
 
 .bg-darkgrey {
