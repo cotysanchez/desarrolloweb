@@ -65,9 +65,11 @@
 .contenidoCajaLista{
     display: flex;
     flex-direction: column;
+    color: #000000;
     gap: 1rem;
     li{
         font-size: 1.2rem;
+        list-style-type: none;
     }
 }
 
@@ -78,10 +80,6 @@
     color: #fff;
 }
 
-.contenidoCajaLista{
-    color: #000000;
-    list-style-type: none;
-}
 
 .cajaNosotros {
     padding: 2.5rem;

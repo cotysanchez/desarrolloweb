@@ -137,10 +137,12 @@ footer {
 .contenidoCajaLista {
   display: flex;
   flex-direction: column;
+  color: #000000;
   gap: 1rem;
 }
 .contenidoCajaLista li {
   font-size: 1.2rem;
+  list-style-type: none;
 }
 
 .tituloSoluciones {
@@ -148,11 +150,6 @@ footer {
   padding-left: 40px;
   padding-bottom: 15px;
   color: #fff;
-}
-
-.contenidoCajaLista {
-  color: #000000;
-  list-style-type: none;
 }
 
 .cajaNosotros {

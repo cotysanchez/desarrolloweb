@@ -4,7 +4,6 @@
     color: #fff;
 
     form {
-
         display: flex;
         flex-direction: column; 
         gap: 2rem;
@@ -16,17 +15,15 @@
             text-align: center;
         }
         
-        
         input {
             font-family: "Lato-Regular";
             font-size: 18px;
             margin: 5px;
         }
         
-        
         textarea {
             font-family: "Lato-Regular";
-            font-size: 18px;
+            font-size: 18px;   
         }
 
         .input-text {
@@ -36,6 +33,7 @@
             padding: 1.5rem;
             border-radius: 10px;
             height: 25px;
+                
         }
 
         .btn-personal {
