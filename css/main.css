@@ -152,6 +152,7 @@ footer {
 
 .contenidoCajaLista {
   color: #000000;
+  list-style-type: none;
 }
 
 .cajaNosotros {
